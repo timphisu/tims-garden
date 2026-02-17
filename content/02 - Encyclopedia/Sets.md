@@ -1,0 +1,159 @@
+---
+created: 2026-1-13
+reviewed: 2026-01-14
+tags:
+  - math/definition
+---
+
+> We assume that we are using ***naive set theory***
+
+
+> [!definition]
+> A **set** is an unordered collection of distinct objects, called *elements* or *members* of the set. A set is said to *contain* its elements. 
+> 
+> We denote $a \in A$ to show that $a$ is an element of the set $A$. The notation $a \notin A$ shows $a$ is not a member of the set $A$
+
+## Ways to Show Sets
+
+### Roster Method
+
+We can describe a set by listing all its elements in what is called the *roster method*
+
+For the set of vowels $V = \{ a, e, i, o, u \}$ which lists every vowel
+
+We can also list "every" element of a set by showing some repeatable pattern then compressing the list with "$\dots$"
+#### Example
+
+The following is acceptable notation
+
+Let $A$ be the set of $n$ elements $x_1, x_2, \dots, x_n$ which can be expressed as
+
+$$
+A = \{ x_1, x_2, \dots, x_n \}
+$$
+
+### Set-Builder Notation
+
+We may also write sets with *set-builder notation* where the general form is 
+
+$$\{ x\ |\ x\ \text{has this property}\ P \}$$
+
+which is interpreted as "the set of all $x$ such that $x$ has property $P$"
+
+#### Examples
+
+For instance, the set $O$ of all odd positive integers less than $10$ can be written as
+
+$$
+$$
+$$
+\begin{align}
+	& O = \{ x\ |\ \text{$x$ is an odd positive less than 10} \} \\
+	\\
+	& O = \{ x \in \mathbb{Z}^{+}\ |\ \text{mod}(x, 2) \ne 0 \land x < 10 \}
+\end{align}
+$$
+
+which are both equivalent notations
+
+We often use *set-builder notation* when describing sets where listing all of its elements would be impossible. 
+
+For instance, the set $\mathbb{Q}^+$ of all positive rational numbers can be written as
+
+$$
+\mathbb{Q}^+ = \{ x \in \mathbb{R}\ |\ x = \frac{p}{q},\ \text{for some positive integers $p$ and $q$}\}
+$$
+
+See [[#Notable Sets]]
+
+#### Interval Notation
+
+We can also use *set-builder notation* to denote **intervals**, which are sets of all the real numbers between $a$ and $b$
+
+> [!definition] 
+> If $a$ and $b$ are real numbers with $a \le b$, then we denote the following intervals
+> $$
+> \begin{align}
+>	& [a, b] = \{ x\ |\ a \le x \le b \} \\
+>	\\
+>	& (a, b] = \{ x\ |\ a < x \le b \} \\
+>	\\
+>	& [a, b) = \{ x\ |\ a \le x < b \} \\
+>	\\
+>	& (a, b) = \{ x\ |\ a < x < b \} \\ 	
+> \end{align}
+> $$
+
+where $[a, b]$ is called the *closed interval* and $(a, b)$ is called the *open interval*
+
+### Venn Diagrams
+
+Sets can be represented graphically using *Venn diagrams* where 
+
+1. We first draw a rectangle to represent the **universal set** $U$ which contains "all the objects under consideration"
+
+2. We draw other geometric shapes like circles and squares to represent sets
+
+3. Points in the *Venn diagram* represent the elements of a set
+
+![[Pasted image 20260114164134.png|300]]
+
+## Notable Sets
+
+The following sets play an important role in mathematics
+
+| Set Symbol                            | Description                                             |
+| ------------------------------------- | ------------------------------------------------------- |
+| $$\mathbb{Z}^{+}$$                    | the set of all *positive integers*                      |
+| $$\mathbb{C}$$                        | the set of all *complex numbers*                        |
+| $$\mathbb{N} = \{ 1, 2, 3, \dots \}$$ | the set of all *natural numbers* (zero may be included) |
+| $$\mathbb{R}$$                        | the set of all *real numbers*                           |
+| $$\mathbb{Q}$$                        | the set of all *rational numbers* (terminating decimal) |
+| $$\mathbb{R}^+$$                      | the set of all *positive real numbers*                  |
+
+## Properties of Sets
+
+1. Sets may also have sets as its elements
+
+Consider the set $\{ \mathbb{N}, \mathbb{R}, \mathbb{Q}, \mathbb{Z}\}$ where each element is a set
+
+2. Sets may also be empty or contain the empty set
+
+The **empty set** or **null set** is denoted $\varnothing$ or $\{ \ \}$ where it has no elements 
+
+Note that we can also have the *singleton set* whose only element is the empty set, that is, $\{ \varnothing \}$ 
+
+3. Sets may be equal to each other if and only if the sets have the same elements
+
+> [!definition]
+> **Set Equality**
+> 
+> If $A$ and $B$ are sets, then $A$ and $B$ are equal if and only if
+> $$ \forall x(x \in A \leftrightarrow x \in B) $$
+> which we can then write $A = B$ when they are equal sets
+
+4. Sets are unordered and contain only unique elements
+
+This means that the following sets are equal
+
+$$
+\{ 1, 3, 3, 5, 5 \} = \{ 5, 3, 1 \} = \{ 1, 3, 5 \}
+$$
+
+
+## [[Subsets]]
+
+![[Subsets]]
+## [[Cardinality of Sets]]
+
+![[Cardinality of Sets]]
+
+
+
+## [[Cartesian Products]]
+
+![[Cartesian Products]]
+
+
+
+

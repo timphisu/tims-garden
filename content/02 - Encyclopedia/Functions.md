@@ -1,0 +1,70 @@
+---
+created: 2026-01-23 00:29
+reviewed: 2026-01-23 00:29
+tags:
+  - math/definition
+---
+## Definitions of Functions
+
+> [!definition]
+> Definition 1: 
+> 
+> Let $A$ and $B$ be nonempty sets. A **function** $f$ from $A$ to $B$ is an assignment of <u>exactly one element</u> of $B$ to each element of $A$. We write $f(a) = b$ if $b$ is the unique element of $B$ assigned by the function $f$ to the element $a$ of $A$. If $f$ is a function from $A$ to $B$, we write $f : A \to B$ .
+
+
+![[Pasted image 20260122190430.png|400]]
+
+> Note that the figure above is an "assignment", not a function, as there are two inputs that correspond to a single output.
+
+> Functions are sometimes also called **mappings** or **transformations**.
+
+> [!definition]
+> Definition 2:
+>  
+>  If $f$ is a function from $A$ to $B$, we say that $A$ is the **domain** of $f$ and $B$ is the **codomain** of $f$ . If $f(a) = b$, we say that $b$ is the *image of $a$* and $a$ is a *preimage* of $b$ . The **range**, or *image*, of $f$ is the set of all images of elements of $A$. Also, if $f$ is a function from $A$ to $B$, we say that $f$ *maps* $A$ to $B$
+
+![[Pasted image 20260122183655.png|300]]
+
+> Note that the codomain of a function from $A$ to $B$ is the set of all possible values for that function, that is, all elements of $B$, and the range is the set of all values of $f(a)$ for $a \in A$, and is always a subset of the codomain.
+
+When defining a function, we specify the following properties
+
+* its domain
+* its codomain
+* mapping every elements of the domain to elements in the codomain
+
+Two functions are *equal* if all 3 properties are the same.
+
+> [!definition]
+Let $f$ be a function from $A$ to $B$ and let $S$ be a subset of $A$ . The *image* of $S$ under the function $f$ is the subset of $B$ (codomain) that consists of the images of the elements of $S$. 
+>
+We denote the images of $S$ by $f(S)$, so
+>$$
+>f(S) = \{ t \ | \ \exists s \in S (t=f(s)) \}
+> $$
+
+> A shorthand notation is $\{ f(x) \ | \ s \in S \}$
+
+### Basic Examples of Functions
+
+1. Let $R$ be the relation with ordered pairs  (Abdul, 22), (Brenda, 24), (Carla, 21), (Desire, 22), (Eddie, 24), and (Felicia, 22). Here each pair consists of a graduate student and this student's age. Specify a function determined by this relation
+
+	If $f$ is a function specified by $R$, then we can define its mappings as $f(\text{Abdul}) = 22$, $f(\text{Brenda}) = 24$, $f(\text{Carla}) = 21$, $f(\text{Desire}) = 22$, $f(\text{Eddie}) = 24$, and $f(\text{Felicia}) = 22$. Here, $f(x)$ is the age of $x$, where $x$ is a student. The domain is the set $\{ \text{Abdul}, \text{Brenda}, \text{Carla}, \text{Desire}, \text{Eddie}, \text{Felicia} \}$ and the codomain can be the set of all possible ages of students. The range of the function we have specified is the set of different ages of these students, which is the set $\{ 21, 22, 24 \}$. 
+
+### Types of Scalar Functions
+
+A function is called **real-valued** if its codomain is the set of real numbers, and it is called **integer-valued** if its codomain is the set of integers. Two real-valued functions or two integer-valued functions with the same domain can be added, as well as multiplied.
+
+> [!definition]
+Let $f_{1}$ and $f_{2}$ be functions from $A$ to $\mathbb{R}$. Then $f_{1} + f_{2}$ and $f_{1}f_{2}$ are also functions from $A$ to $\mathbb{R}$
+defined for all $x \in A$ by 
+> 
+> $$
+> \begin{align}
+>  & (f_{1} + f_{2})(x) = f_{1}(x) + f_{2}(x) \\ \\
+>  & (f_{1}f_{2})(x) = f_{1}(x)f_{2}(x)
+> \end{align}
+> $$
+
+> The expression $f(S)$ denotes a set, not the value of the function $f$ for the set $S$
+
