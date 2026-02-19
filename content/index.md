@@ -1,3 +1,7 @@
+---
+title: Tim's Garden 🪴
+---
+
 # Timothy's Digital Garden 🪴
 
 ## Introduction
