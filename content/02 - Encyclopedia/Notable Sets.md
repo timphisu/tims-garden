@@ -1,6 +1,8 @@
 ---
 created: 202602171625
 reviewed: 202602171625
+tags:
+  - math/definition
 ---
 
 The following sets play an important role in mathematics

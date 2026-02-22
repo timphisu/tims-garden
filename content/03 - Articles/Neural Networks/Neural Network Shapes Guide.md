@@ -1,5 +1,5 @@
 
-## General Shapes
+## General Reference
 
 Given some training array $X$ with shape $(m, d)$, we forward pass each example with some given weights and biases at each layer $\ell \in (1, L)$ where the number of neurons for that layer is denoted $n_{\ell}$ .
 
@@ -24,7 +24,7 @@ For the update rule to be a valid operation, the gradients must be of the same s
 >  \dim \left(\frac{\partial J}{\partial \theta} \right) = \dim(\theta)
 >  $$
 
-> **Proof**
+> **Proof:**
 > By the definition of matrix addition-subtraction, the update rule cannot be valid if $\frac{\partial J}{\partial \theta}$ does not match the rows and columns of $\theta$
 
 #### Corollary: Application To Neural Network Layers
@@ -157,4 +157,4 @@ For the $i$-th training example across $m$ observations, the computations are tr
 | Weight Gradient | $$\frac{\partial L}{\partial W^{(\ell)}} = \delta^{(\ell)} A^{(\ell - 1)T}$$   | $$(n_{\ell}, n_{\ell -1})$$ |
 | Bias Gradient   | $$\frac{\partial L}{\partial B^{(\ell)}} = \delta^{(\ell)}$$                   | $$(n_{\ell}, m)$$           |
 
-> See [[04 - Articles/Neural Networks/Neural Network Report#Defining the Bias Tensor]] for how we broadcast the addition to $(n_{\ell}, m)$
+> See [[Neural Networks/Neural Network Report#Defining the Bias Tensor]] for how we broadcast the addition to $(n_{\ell}, m)$

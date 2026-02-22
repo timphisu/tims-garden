@@ -1,6 +1,6 @@
 ## Introduction
 
-For the past two weeks, I've been building a neural network from scratch as a learning experience for an undergraduate maths student. I decided to do it on Python as that has many of the array-mechanisms there in place that I don't have to bother worrying about (i.e. NumPy).
+Over the winter break, I've been building a neural network from scratch as a learning experience for an undergraduate maths student. I decided to do it on Python as that has many of the array-mechanisms there in place that I don't have to bother worrying about (i.e. NumPy).
 
 In this article, I build from the ground up the mathematical structure of a neural network, then show you along how to implement it into code, and finally make model evaluations and possible steps forward. 
 
