@@ -280,13 +280,15 @@ $$
 > Since $y$ cannot be isolated on its own, we say this is an [[Differential Equations#Types of Solutions|implicit solution]]
 
 ---
-### Autonomous Equations
+### Solving Separable Autonomous Equations
 
 **Problem:** Find $Q$ given
 
 $$
 \frac{dQ}{dt} = k(Q-70)
 $$
+
+^e10a21
 
 * where $k$ is a constant
 
@@ -304,4 +306,6 @@ $$
 \end{align}
 $$
 
-> Note for this problem that there was no variable of $t$ on the RHS. This form of separable equation $\frac{dy}{dx} = f(y)$ is called an [[autonomous equation]]
+> Note for this problem that there was no variable of $t$ on the RHS. This form of separable equation $\frac{dy}{dx} = f(y)$ is called an [[Autonomous Equations|autonomous equaiton]]
+
+---

@@ -94,7 +94,7 @@ Interesting results from this formula include
 Since each of the 10 placements has 6 choices, then there are ${10}^{6}$ ways to arrange such a sequence.
 
 ## Permutations with Indistinguishable Objects
-### Formula for Permutations with Indistinguishable Objects
+### Formula
 
 > [!theorem]
 > The number of different permutations of $n$ objects, where there are $n_{1}$ indistinguishable objects of type 1, $n_{2}$ indistinguishable objects of type 2, $...$, and $n_{k}$ indistinguishable objects of type $k$, is
