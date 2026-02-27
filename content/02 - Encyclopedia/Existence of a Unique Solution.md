@@ -1,6 +1,8 @@
 ---
 created: 202602270054
 reviewed: 202602270054
+tags:
+  - math/theorem
 ---
 
 > [!theorem]

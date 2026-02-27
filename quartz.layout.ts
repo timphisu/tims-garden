@@ -43,7 +43,48 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+  localGraph: {
+    drag: true,
+    zoom: true,
+    depth: 1,
+    scale: 1.1,
+    repulsion: 0.5,
+  },
+  globalGraph: {
+    drag: true,
+    zoom: true,
+    depth: -1,
+    scale: 0.9,
+    repulsion: 0.5,
+  },
+  // This is where you match your Obsidian tags
+  colors: {
+    lightMode: {
+      arrow: "#9b9b9b",
+      link: "#d3d3d3",
+      node: "#4b4b4b",
+      tagGroup: "#b3b3b3",
+      // Custom tag colors from your screenshot
+      "math/subject": "#ff0000",    // Red
+      "math/concept": "#61ef7e",    // Green
+      "math/definition": "#00aaff", // Blue
+      "math/problems": "#efff3b",   // Yellow
+      "math/theorem": "#e952e1",    // Pink/Purple
+    },
+    darkMode: {
+      arrow: "#8b8b8b",
+      link: "#2b2b2b",
+      node: "#d3d3d3",
+      tagGroup: "#3b3b3b",
+      "math/subject": "#ff4d4d",
+      "math/concept": "#85ff9e",
+      "math/definition": "#33bbff",
+      "math/problems": "#f4ff66",
+      "math/theorem": "#ef82e9",
+    },
+  },
+}),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

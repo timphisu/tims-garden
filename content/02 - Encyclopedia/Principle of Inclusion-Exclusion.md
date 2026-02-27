@@ -8,10 +8,7 @@ tags:
 
 > [!theorem]
 > To find the cardinality of the union of two sets:
-> 
-> $$
- |A \cup B| = |A| + |B| - |A \cap B| 
- $$
+> $$|A \cup B| = |A| + |B| - |A \cap B|$$
 
 ## Intuition
 

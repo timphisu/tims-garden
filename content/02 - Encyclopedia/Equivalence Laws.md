@@ -12,18 +12,7 @@ $$
 $$
 Here we have the following important equivalence laws
 
-| Name                | Equivalence                                                                                                                                        |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identity Laws       | $$\begin{align} & p \land \mathbf{T} \equiv p \\ & p \lor \mathbf{F} \equiv p \end{align}$$                                                        |
-| Domination Laws     | $$ \begin{align} & p \lor \mathbf{T} \equiv \mathbf{T} \\ & p \land \mathbf{F} \equiv \mathbf{F} \end{align}$$<br><br>                             |
-| Idempotent Laws     | $$\begin{align}  & p \lor p \equiv p \\ & p \land p \equiv p \end{align}$$                                                                         |
-| Double Negation Law | $$ \begin{align} \neg (\neg p) \equiv p\end{align} $$                                                                                              |
-| Commutative Laws    | $$\begin{align} p \lor q \equiv q \lor p \\ p \land q \equiv q \land p \end{align}$$                                                               |
-| Associative Laws    | $$\begin{align} & (p \lor q) \lor r \equiv p \lor (q \lor r) \\ & (p \land q) \land r \equiv p \land (q \lor r) \end{align}$$                      |
-| Distributive Laws   | $$ \begin{align} & p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) \\ & p \land (q \lor r) \equiv (p \land q) \lor (p \land r) \end{align}$$ |
-| De Morgan's Laws    | $$\begin{align} & \neg (p \land q) \equiv \neg p \lor \neg q \\ & \neg (p \lor q) \equiv \neg p \land \neg q \end{align}$$                         |
-| Absorption Laws     | $$\begin{align} p \lor (p \land q) \equiv p \\ p \land (p \lor q) \equiv p \end{align}$$                                                           |
-| Negation Laws       | $$\begin{align} p \lor \neg p \equiv \mathbf{T} \\ p \land \neg p \equiv \mathbf{F}\end{align}$$                                                   |
+$$\begin{array}{l l} \textbf{Name} & \textbf{Equivalence} \\[8pt] \hline \\[-6pt] \text{Identity Laws} & \begin{aligned} & p \land \mathbf{T} \equiv p \\ & p \lor \mathbf{F} \equiv p \end{aligned} \\[18pt] \text{Domination Laws} & \begin{aligned} & p \lor \mathbf{T} \equiv \mathbf{T} \\ & p \land \mathbf{F} \equiv \mathbf{F} \end{aligned} \\[18pt] \text{Idempotent Laws} & \begin{aligned} & p \lor p \equiv p \\ & p \land p \equiv p \end{aligned} \\[18pt] \text{Double Negation Law} & \neg (\neg p) \equiv p \\[18pt] \text{Commutative Laws} & \begin{aligned} & p \lor q \equiv q \lor p \\ & p \land q \equiv q \land p \end{aligned} \\[18pt] \text{Associative Laws} & \begin{aligned} & (p \lor q) \lor r \equiv p \lor (q \lor r) \\ & (p \land q) \land r \equiv p \land (q \land r) \end{aligned} \\[18pt] \text{Distributive Laws} & \begin{aligned} & p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) \\ & p \land (q \lor r) \equiv (p \land q) \lor (p \land r) \end{aligned} \\[18pt] \text{De Morgan's Laws} & \begin{aligned} & \neg (p \land q) \equiv \neg p \lor \neg q \\ & \neg (p \lor q) \equiv \neg p \land \neg q \end{aligned} \\[18pt] \text{Absorption Laws} & \begin{aligned} & p \lor (p \land q) \equiv p \\ & p \land (p \lor q) \equiv p \end{aligned} \\[18pt] \text{Negation Laws} & \begin{aligned} & p \lor \neg p \equiv \mathbf{T} \\ & p \land \neg p \equiv \mathbf{F} \end{aligned} \end{array}$$
 
 The following involves *conditional statements*
 

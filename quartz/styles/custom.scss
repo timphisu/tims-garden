@@ -59,3 +59,16 @@ article img {
   width: fit-content !important;  /* Your original logic */
   border-collapse: collapse;
 }
+
+/* quartz/styles/custom.scss */
+
+.article ol li {
+  margin-top: 0.8rem !important;    /* Adjust for more or less space */
+  margin-bottom: 0.8rem !important;
+}
+
+/* Optional: If you want sub-lists to have less spacing */
+.article ol li ol li {
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
+}

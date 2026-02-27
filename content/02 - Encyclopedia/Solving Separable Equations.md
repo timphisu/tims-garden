@@ -238,7 +238,7 @@ $$
 \end{align}
 $$
 
-To continue further, we must recognize $y$ as a function of $t$, denoted $y(t)$, which when evaluating we find $y(t = x) = y(x) = y$. Moreover, $y(t = -2) = \frac{1}{3}$. So substituting, 
+To continue further, we must recognize $y$ as a function of $t$, denoted $y(t)$, which when evaluating we find $y(t)$ when $t =x$ is the same as $y(x) = y$. Moreover, $y(t) = \frac{1}{3}$ when $t=-2$ by the initial condition. So substituting, 
 
 $$
 \begin{align}
