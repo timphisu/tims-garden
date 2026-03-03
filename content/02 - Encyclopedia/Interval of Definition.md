@@ -3,6 +3,9 @@ created: 202602261409
 reviewed: 202602261409
 tags:
   - math/definition
+aliases:
+  - interval of solution
+  - interval of domain
 ---
 
 The interval $I$ is called the **interval of definition**, **interval of validity**, or the **domain of solution**. From [[Differential Equations|differential equations]], the function $\phi$ is not the same as the solution $\phi$, that is, the domain of the solution is generally a [[Subsets|subset]] of the domain of the function.

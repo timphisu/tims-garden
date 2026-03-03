@@ -76,7 +76,7 @@ $$
 
 > [!info] Negligibility of Integration Constant
 > 
-> If we use the general solution $\mu(x) = Ce^{\int P(x)\, dx}$, when multiplying this [[#Standard Form|equation]] by $\mu(x)$
+> If we use the general solution $\mu(x) = Ce^{\int P(x)\, dx}$, when multiplying this [[Linear Differential Equations#Standard Form|equation]] by $\mu(x)$
 > 
 > $$
 > Ce^{\int P(x)\, dx} \frac{dy}{dx} + Ce^{\int P(x)\, dx} P(x) = Ce^{\int P(x)\, dx}f(x)

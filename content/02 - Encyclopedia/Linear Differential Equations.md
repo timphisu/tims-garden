@@ -56,6 +56,6 @@ $$
 
 Then in this case, $P(x)=1$ and $f(x) = 1$
 
-## [[Solving Linear Equations]]
+## [[Solving Linear DEs]]
 
 > See above how to solve linear equations and examples

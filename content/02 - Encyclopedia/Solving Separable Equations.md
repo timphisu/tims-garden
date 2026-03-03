@@ -80,7 +80,7 @@ $$
 
 When we think of a solution, we must also think of its domain, namely its *domain of solution*. Taking a look at the function $\displaystyle y(x) = \frac{1}{x^{2} - 2}$, we know that for $y(x)$ to be defined then $x \ne \pm \sqrt{ 2 }$. However, the domain of solution $I$ cannot be $(-\infty, -\sqrt{ 2 })\cup(-\sqrt{ 2 }, \sqrt{ 2 })\cup(\sqrt{ 2 }, \infty)$; we must choose one of the three disjoint intervals. Since there is an initial condition $y(2) = \frac{1}{2}$, then $I$ must contain 2, hence we choose $I = (\sqrt{ 2 }, \infty)$. ^85f196
 
-Thus, the graph of the function $\displaystyle y(x) = \frac{1}{x^{2} - 2}$ on the interval $I = (\sqrt{2}, \infty)$ is the [[solution curve]] to the above differential equation.
+Thus, the graph of the function $\displaystyle y(x) = \frac{1}{x^{2} - 2}$ on the interval $I = (\sqrt{2}, \infty)$ is the [[Solution Curves|solution curve]] to the above differential equation.
 
 ![[Pasted image 20260218210629.png|500]]
 
@@ -109,7 +109,7 @@ $$
 
 satisfies.
 
-However when taking a look at the explicit solution $\displaystyle y = \frac{1}{x^{2} + C}$, there's no way we can get $y=0$ from shifting values of $C$, which means $y = 0$ is a **singular solution**.
+However when taking a look at the explicit solution $\displaystyle y = \frac{1}{x^{2} + C}$, there's no way we can get $y=0$ from shifting values of $C$, which means $y = 0$ is a [[singular solution]].
 
 > [!tip]
 > The way we can find *singular solutions* is when working with separable equations we might divide by $h(y)$. If we do so, we should solve for $h(y)=0$ before integrating. If $h(c) = 0$ for some constant $c$ then see if we can derive $y=c$ by plugging in values for $C$ in the explicit solution. And if there's no values of $C$ that can get $y=c$, then $y=c$ is a singular solution.

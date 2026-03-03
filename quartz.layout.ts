@@ -84,6 +84,7 @@ export const defaultContentPageLayout: PageLayout = {
       "math/theorem": "#ef82e9",
     },
   },
+  showAttributes: [],
 }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
