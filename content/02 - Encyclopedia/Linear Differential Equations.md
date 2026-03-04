@@ -42,7 +42,9 @@ where they are linear, but not separable.
 > [!definition]
 > If we divide a [[2.3 - Linear Equations#Definition|linear equation]] both sides by the lead coefficient $a_{1}(x)$, we obtain a much more workable form, the *standard form*, of a linear equation, expressed as
 > 
-> $$\frac{dy}{dx} + P(x)y = f(x)$$
+> $$
+> \frac{dy}{dx} + P(x)y = f(x)
+> $$
 
 > Note that $f(x)$ here and $g(x)$ [[#Definition|here]] are called *input functions* or *force functions* 
 
