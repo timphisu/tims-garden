@@ -64,7 +64,7 @@ $$
 \mathbb{Q}^+ = \{ x \in \mathbb{R}\ |\ x = \frac{p}{q},\ \text{for some positive integers $p$ and $q$}\}
 $$
 
-See [[#Notable Sets]]
+> See [[#Notable Sets]]
 
 #### Interval Notation
 

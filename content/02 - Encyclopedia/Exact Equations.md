@@ -1,0 +1,370 @@
+---
+created: 202603051447
+reviewed: 202603051447
+tags:
+  - math/definition
+---
+# Exact Equations
+## Motivations for Exact Equations
+
+Suppose $z = f(x, y)$. Then the differential of this function would be
+
+$$
+dz = \frac{ \partial f }{ \partial x } dx + \frac{ \partial f }{ \partial y } dy
+$$
+
+In the special case that the function is held constant (that is, a [[level curve]]), expressed as $f(x, y) = c$, then
+
+$$
+\begin{align}
+ & f(x, y) = c \\ \\
+ & d[f(x, y)] = d(c) \\ \\
+ & \frac{ \partial f }{ \partial x } dx + \frac{ \partial f }{ \partial y } dy = 0
+\end{align}
+$$
+
+The question becomes if we were given a first-order [[Differential Equations|differential equation]] in the form above, would we be able to recognize its terms as differentials of some function $f(x, y) = c$ which solves the DE?
+
+## Definition
+
+> [!definition] Exact Equations
+> A differential expression $M(x, y)\, dx + N(x, y)\, dy$ is an exact differential in a region $R$ of the $xy$-plane if its corresponds to the differential of some function $f(x, y)$ defined in $R$. A first-order differential equation of the form
+> 
+> $$
+> M(x, y)\, dx + N(x, y)\, dy = 0
+> $$
+> 
+> is said to be an **exact equation** if the expression on the LHS is an exact differential of $f(x, y)$.
+
+## Requirements for an Exact Differential
+
+> [!theorem]
+> Let $M(x, y)$ and $N(x, y)$ be continuous and have continuous first partial derivatives in a rectangular region $R$ defined by $a < x < b$, $c < y < d$. Then a necessary and sufficient condition for $M(x, y)\, dx + N(x, y)\, dy$ to be an *exact differential* is
+> 
+> $$
+> \frac{ \partial M }{ \partial y } = \frac{ \partial N }{ \partial x } 
+> $$
+> 
+
+#### Proof of the Necessity
+
+Assume that $M(x, y)$ and $N(x, y)$ have continuous first partial derivatives for all $(x, y)$. If the expression $M(x, y)\, dx + N(x, y)\, dy$ is exact, then there exists some function $f$ such that $\forall x \in \mathbb{R}$,
+
+$$
+M(x, y)\, dx + N(x, y)\,dy = \frac{ \partial f }{ \partial x } \, dx + \frac{ \partial f }{ \partial y } \, dy
+$$
+
+Therefore, 
+
+$$
+M(x, y) = \frac{ \partial f }{ \partial x } , \quad N(x, y) = \frac{ \partial f }{ \partial y } 
+$$
+
+but by [[Clairaut's Theorem]] 
+
+$$
+\frac{ \partial }{ \partial y } M(x, y) = \frac{ \partial^{2} f }{ \partial y\,  \partial x} = \frac{ \partial^{2} f }{ \partial x\ \partial y } = \frac{ \partial }{ \partial x } N(x, y)   
+$$
+
+Thus, 
+
+$$
+M_{y} = N_{x} 
+$$
+
+The equality of mixed partials is a consequence of $M(x, y)$ and $N(x, y)$ being first partial derivatives. 
+
+## Method of Solution
+
+Given an equation in the differential form $M(x, y)\, dx + N(x, y)\, dy = 0$, determine whether the requirement for an exact differential satisfies. If it does, then $\exists f$ for which
+
+$$
+\frac{ \partial f }{ \partial x }  = M(x, y)
+$$
+
+We can find $f$ by integrating $M(x, y)$ with respect to $x$ while holding $y$ constant
+
+$$
+f(x, y) = \int M(x, y)\, dx + g(y)
+$$
+
+* where the arbitrary function $g(y)$ is the "constant" of integration, or $h(x)$ if $f = \int N\, dy$
+
+If we differentiate this function $f$ with respect to $y$, and assuming ${ \partial f }/{ \partial y }  = N(x, y)$
+
+$$
+\frac{ \partial f }{ \partial y } = \frac{ \partial }{ \partial y } \int M(x, y)\, dx + g'(y) = N(x, y) 
+$$
+
+which means
+$$
+\begin{align}
+ & g'(y) = N(x, y) - \frac{ \partial }{ \partial y } \int M(x, y)\, dx
+\end{align}
+$$
+
+and when integrated with respect to $y$, we get $g(y)$, which can be substituted into our previous definition of $f(x, y)$.
+
+The implicit solution of the differential equation is $f(x, y) = c$.
+
+> Conversely, the same process can be begin with integrating $N(x, y)$ with respect to $y$. Whichever is easier is what should be used to solve exact equation problems.
+
+### Using Integrating Factors to Force Exact Equations
+
+We can use an [[Solving Linear DEs#Integrating Factor|integrating factor]] to force an equation to *possibly* be exact.
+
+Multiplying $\mu(x, y)$ to the supposed differential
+
+$$
+\mu(x, y)M(x, y)\, dx + \mu(x, y)N(x, y)\, dy = 0
+$$
+
+would make it exact; the only [[#Requirements for an Exact Differential|requirement]] being $(\mu M)_{y}=(\mu N)_{x}$ .
+
+$$
+\begin{align}
+ & (\mu M)_{y} = (\mu N)_{x} & \text{Given} \\ \\
+ & \mu_{y}M + \mu M_{y} = \mu_{x}N + \mu N_{x} & \text{Product Rule} \\ \\
+ & \mu_{x}N - \mu_{y}M = \mu M_{y} - \mu N_{x} \\ \\
+ & \mu_{x}N - \mu_{y}M = (M_{y} - N_{x})\mu
+\end{align}
+$$
+
+In the pursuit of finding $\mu(x, y)$, the above equation is a [[partial differential equation]]. 
+
+But for simplicity, assume $\mu$ is a function of only a single variable $x$ or $y$. 
+
+In this case, we let $\mu = \mu(x)$ so $\mu_{x} = \frac{d\mu}{dx}$ and $\mu_{y}=0$, then substituting we find
+
+$$
+\begin{align}
+ & \mu_{x}N - \mu_{y}M = (M_{y} - N_{x})\mu \\ \\
+ & \left( \frac{d\mu}{dx} \right)N- (0)M = (M_{y} - N_{x})\mu \\ \\
+ & \left( \frac{d\mu}{dx} \right)N = (M_{y} - N_{x})\mu \\ \\
+ & \frac{d\mu}{dx} = \frac{(M_{y} - N_{x})\mu}{N}
+\end{align}
+$$
+
+Now to integrate this, the RHS must only be a variable of $x$, that is there should be no terms of $y$ on the RHS. Or if $\mu = \mu(y)$, then conversely the RHS must only be a variable of $y$. 
+
+With some arbitrary algebra, we can find $\mu$ the same way we did in [[Solving Linear DEs#Finding the Integrating Factor|solving linear DEs]]. We recognize that $P(x) = \frac{M_{y} - N_{x}}{N}$ or $P(y) = \frac{N_{x} - M_{y}}{M}$.
+
+For exact equation problems, we define $\mu$ to be
+
+$$
+\mu(x) = e^{\Large{\int \frac{M_{y} - N_{x}}{N}\, dx}} \quad \text{or} \quad \mu(y) = e^{\Large{\int \frac{N_{x} - M_{y}}{M}}\, dy}
+$$
+
+## Examples of Solving Exact DEs
+
+**Problem:** Solve
+
+$$
+(2xy)\, dx + (x^{2} - 1)\, dy = 0
+$$
+
+**Approach:** Begin by recognizing $M = 2xy$ and $N = x^{2}-1$. Then by taking their mixed partials, we find 
+
+$$
+M_{y} = 2x = N_{x}
+$$
+
+that they are equal, so the requirement is satisfied.
+
+By integrating $M$ with respect to $x$, we find $f$
+
+$$
+f(x, y) = \int M\, dx =  \int 2xy\, dx = x^{2}y + g(y)
+$$
+
+Then taking the derivative of $f$ with respect to $y$,
+
+$$
+\frac{ \partial f }{ \partial y } = \frac{ \partial }{ \partial y } \left[ x^{2}y + g(y) \right] = x^{2} + g'(y) = N
+$$
+
+From taking a look at the expression above, what's missing is $-1$ so $g'(y) = -1$. Then integrating it with respect to $y$, we find $g(y) = -y$.
+
+The function $f$ is defined as
+
+$$
+f(x, y) = x^{2}y - y
+$$
+
+The implicit form of this solution is
+
+$$
+x^{2}y - y = c
+$$
+
+Since we can isolate for $y$, we can explicitly state the solution as
+
+$$
+y = \frac{c}{x^{2}-1}
+$$
+
+---
+
+**Problem:** Solve
+
+$$
+(\sin y - y\sin x)\, dx + (\cos x + x\cos y - y)\,dy = 0 
+$$
+
+**Approach:** By recognizing $M = \sin y - y\sin x$ and $N = \cos x + x\cos y - y$, we find that 
+
+$$
+M_{y} = \cos y - \sin x, \quad N_{x} = \cos y - \sin x
+$$
+
+the mixed partials are equal. 
+
+Then there exists a function $f$ such that
+
+$$
+\begin{align}
+f(x, y)  & = \int M\, dx \\ \\
+ & = \int (\sin y - y \sin x)\, dx \\ \\
+ & = x\sin y + y\cos x + g(y)
+\end{align}
+$$
+
+Taking its partial with respect to $y$,
+
+$$
+f_{y} = x\cos y + \cos x + g'(y) = N
+$$
+
+By inspection, $g'(y)=-y$ which implies that $g(y) = -\frac{1}{2}y^{2}+k$.
+
+The function $f$ is defined as
+
+$$
+f(x, y) = x\sin(y) + y\cos(x) - \frac{1}{2}y^{2} + k
+$$
+
+The implicit solution becomes
+
+$$
+x\sin(y) + y\cos(x) - \frac{1}{2}y^{2} = c
+$$
+
+---
+
+**Problem:** Solve the following initial value problem
+
+$$
+(e^{x} + y)\, dx + (2 + x + ye^{y})\, dy = 0, \quad y(0) = 1
+$$
+
+**Approach:** Identify $M = e^{x} + y$ and $N = 2 + x + ye^{y}$. 
+
+We find $f$ as 
+
+$$
+f(x, y) = \int M\, dx = \int (e^{x} + y)\, dx = e^{x} + xy + g(y)
+$$
+
+Then,
+
+$$
+f_{y} = x + g'(y) = N
+$$
+
+By inspection, $g'(y) = 2 + ye^{y}$. By integrating,
+
+$$
+\begin{align}
+ g(y) &  = \int (2 + ye^{y})\, dy \\ \\
+ & = 2 \int dy + \int y e^{y}\, dy \\ \\
+ & = 2y + \left( ye^{y}  - \int e^{y}\, dy \right)  & \text{IBP: } \int ye^{y}\, dy = \int y\,  de^{y} \\ \\
+ & = 2y + ye^{y} - e^{y} + k
+\end{align}
+$$
+
+Note that $k$ is the constant of integration, but the implicit solution becomes
+
+$$
+\begin{align}
+C & = e^{x} + xy + 2y + ye^{y} - e^{y} \\  \\
+  & = e^{x} + (x+2)y + (y-1)e^{y} \\ \\
+\end{align}
+$$
+
+Implementing the initial condition, we find that 
+
+$$
+\begin{align}
+c & = e^{0} + (0+2)(1) + (1-1)e^{1} \\ \\
+  & = 1 + 2 + 0 \\ \\
+  & = 3
+\end{align}
+$$
+
+So altogether,
+
+$$
+e^{x} + (x+2)y + (y-1)e^{y} = 3
+$$
+
+---
+
+**Problem:** Solve
+
+$$
+\cos x\, dx + \left( 1 + \frac{2}{y} \right) \sin x\, dy = 0
+$$
+
+**Approach:** We make a first-guess that this equation is an exact equation because it is in the usual form for exact equations. First identifying $M = \cos x$ and $N = \left( 1 + \frac{2}{y} \right)\sin x$.
+
+$$
+M_{y} = 0, \quad N_{x} = \left( 1 + \frac{2}{y} \right) \cos x
+$$
+However, the mixed partials do not equal each other. But, we can introduce an integrating factor $\mu(x)$ that forces the equation to be exact. Let's see if $P$ is a function of only $x$:
+
+$$
+P = \frac{M_{y} - N_{x}}{N} =  \frac{-\left( 1 + \frac{2}{y} \right) \cos x}{\left( 1 + \frac{2}{y} \right) \sin x } = - \cot x
+$$
+
+which checks out. 
+
+Then,
+
+$$
+\begin{align}
+ & \int P\, dx = - \frac{\cos x}{\sin x}\, dx = - \ln|\sin x| = \ln|\csc x| \\ \\
+ & \mu(x) = e^{\int P\, dx} = e^{\ln|\csc x|} = \csc x
+\end{align}
+$$
+
+Multiplying the original differential equation by $\mu$
+
+$$
+\begin{align}
+ & \mu\cos x\, dx + \mu\left( 1 + \frac{2}{y} \right) \sin x\, dy = 0 \\ \\
+ & \cot x\, dx + \left( 1+\frac{2}{y} \right)\, dy = 0
+\end{align}
+$$
+
+We can then recognize our new $M$ as $M = \cot x$ which gives
+
+$$
+f(x,y) = \int M\, dx = \int \frac{\cos x}{\sin x}\, dx = \ln|\sin x| + g(y)
+$$
+
+Then
+
+$$
+f_{y} = g'(y) = N \to g'(y) = 1 + \frac{2}{y}
+$$
+which makes $g(y) = y + 2\ln|y|$.
+
+Finally,
+
+$$
+C = \ln|\sin x| = y + 2\ln|y|
+$$
+
+is the implicit solution to this differential equation.
+
+It can be easy to get lost without considering our [[Interval of Definition|interval of solution]]. Both in the original equation and in the solution, the problem prescribes $y \ne 0$ and $\sin x \ne 0$. Points where $\sin x = 0$ are $x = 0, \pi, ...$ so we can pick a continuous interval between these points. We choose the interval of solution to be $I = (0, \pi)$.

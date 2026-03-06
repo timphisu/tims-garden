@@ -2,9 +2,8 @@
 created: 202602191503
 reviewed: 202602191503
 tags:
-  - math/definition
+  - math/concept
 ---
-# Differential Equations
 ## Definition
 
 > [!definition]
