@@ -2,8 +2,14 @@
 created: 2026-01-28 19:34
 reviewed: 2026-01-28 19:34
 tags:
-  - math/definition
+  - math/topic/algebra
+  - math/building-blocks
+  - math/concept
 ---
+# Sequences
+
+## What is a Sequence?
+
 A sequence is just an ordered list of elements such as the sequence of even numbers $2, 4, 6, 8, ...$ but mathematically it is defined below.
 
 > [!definition]
@@ -13,13 +19,12 @@ A sequence is just an ordered list of elements such as the sequence of even numb
 
 ### Examples of Sequences
 
-1. Consider the sequence $\{ a_{n} \}$ where $\displaystyle a_{n} = \frac{1}{n}$
+Consider the sequence $\{ a_{n} \}$ where $\displaystyle a_{n} = \frac{1}{n}$
 
-	The first terms of this ordered list are namely $a_{1}, a_{2}, a_{3}, ...$ but their literal values come out to be $1, \frac{1}{2}, \frac{1}{3}, ...$ 
+The first terms of this ordered list are namely $a_{1}, a_{2}, a_{3}, ...$ but their literal values come out to be $1, \frac{1}{2}, \frac{1}{3}, ...$ 
 
-### [[Progressions]]
+## [[Progressions]]
 
-![[Progressions]]
-### [[Recurrence Relation]]
+## [[Recurrence Relation]]
 
-![[Recurrence Relation]]
+## [[Limits of Sequences]]

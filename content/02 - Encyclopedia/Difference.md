@@ -1,8 +1,9 @@
 ---
-created: 202602212001
-reviewed: 202602212001
+created: 202603071235,
+reviewed: 202603071235
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/set-theory
 ---
 
 > [!definition]

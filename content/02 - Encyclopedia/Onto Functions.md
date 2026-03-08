@@ -2,7 +2,8 @@
 created: 2026-01-23 00:29
 reviewed: 2026-01-23 00:29
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/algebra
 ---
 For some functions the range and codomain are equal. That is, every member of the codomain is the image of some element of the domain. Functions with this property are called **onto** functions. 
 

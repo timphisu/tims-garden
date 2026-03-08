@@ -1,8 +1,10 @@
 ---
-created: 202603022114
+created: 202603022120
 reviewed: 202603022114
 tags:
   - math/concept
+  - math/building-blocks
+  - math/topic/odes
 ---
 
 #### Intuition

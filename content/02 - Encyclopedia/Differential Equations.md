@@ -2,12 +2,14 @@
 created: 202602191503
 reviewed: 202602191503
 tags:
-  - math/concept
+  - math/building-blocks
+  - math/topic/odes
 ---
+# Differential Equations
 ## Definition
 
 > [!definition]
-> An equation containing the derivatives of one or more unknown functions (or dependent variables), with respect to one or more independent variables, is said to be a **differential equation (DE)**.
+> An equation containing the derivatives of one or more unknown [[Functions|functions]] (or dependent variables), with respect to one or more independent variables, is said to be a **differential equation (DE)**.
 
 ## Classifying Differential Equations
 
@@ -75,9 +77,6 @@ $$
 \frac{d^{(n)}y}{dx^{(n)}} = f(x, y, y', ..., y^{(n-1)})
 $$
 
-
-
-
 ## Solutions for Differential Equations
 
 > [!definition]
@@ -89,6 +88,6 @@ $$
 F(x, \phi(x), \phi'(x), ..., \phi^{(n)}(x)) = 0 \quad \text{for all}\ x\ \text{in}\ I
 $$
 
-### [[Interval of Definition]]
+### [[Interval of Solution]]
 
 > $I$ in the above expression denotes the *interval of definition*. See more above. 

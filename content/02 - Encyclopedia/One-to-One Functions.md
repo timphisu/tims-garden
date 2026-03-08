@@ -2,7 +2,8 @@
 created: 2026-01-23 00:29
 reviewed: 2026-01-23 00:29
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/algebra
 ---
 > [!definition]
 A function $f$ is said to be **one-to-one**, or an *injection*, if and only if $f(a) = f(b)$ implies that $a = b$ for all $a$ and $b$ in the domain of $f$.

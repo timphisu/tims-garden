@@ -3,6 +3,9 @@ created: 2026-02-21 21:02
 reviewed: 2026-02-21 21:02
 tags:
   - math/problems
+  - math/concept
+  - math/building-blocks
+  - math/topic/odes
 ---
 
 # Initial Value Problems

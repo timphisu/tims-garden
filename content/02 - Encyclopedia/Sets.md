@@ -2,7 +2,9 @@
 created: 2026-1-13
 reviewed: 2026-01-14
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/concept
+  - math/topic/set-theory
 ---
 
 > We assume that we are using ***naive set theory***

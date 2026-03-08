@@ -3,6 +3,7 @@ created: 202602102047
 reviewed: 2026-02-10
 tags:
   - math/problems
+  - math/topic/counting
 ---
 ## Counting Multiple Sequences that Satisfy a Condition
 

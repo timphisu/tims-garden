@@ -3,6 +3,8 @@ created: 202602051507
 reviewed: 2026-02-05
 tags:
   - math/theorem
+  - math/topic/counting
+  - math/topic/algebra
 ---
 # Binomial Theorem
 

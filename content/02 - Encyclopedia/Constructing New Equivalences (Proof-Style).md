@@ -3,6 +3,7 @@ created: 202602101322
 reviewed: 2026-02-10
 tags:
   - math/problems
+  - math/topic/logic
 ---
 
 #### Example 1.3.4

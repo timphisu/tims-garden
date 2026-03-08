@@ -3,6 +3,7 @@ created: 202602212001
 reviewed: 202602212001
 tags:
   - math/theorem
+  - math/topic/set-theory
 ---
 
 ### Table of Important Set Laws

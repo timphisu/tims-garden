@@ -3,16 +3,18 @@ created: 202602101322
 reviewed: 2026-02-10
 tags:
   - math/theorem
+  - math/problems
+  - math/topic/logic
 ---
+# Equivalence Laws
 
-$$
-\begin{align}
+## General Laws
 
-\end{align}
-$$
 Here we have the following important equivalence laws
 
 $$\begin{array}{l l} \textbf{Name} & \textbf{Equivalence} \\[8pt] \hline \\[-6pt] \text{Identity Laws} & \begin{aligned} & p \land \mathbf{T} \equiv p \\ & p \lor \mathbf{F} \equiv p \end{aligned} \\[18pt] \text{Domination Laws} & \begin{aligned} & p \lor \mathbf{T} \equiv \mathbf{T} \\ & p \land \mathbf{F} \equiv \mathbf{F} \end{aligned} \\[18pt] \text{Idempotent Laws} & \begin{aligned} & p \lor p \equiv p \\ & p \land p \equiv p \end{aligned} \\[18pt] \text{Double Negation Law} & \neg (\neg p) \equiv p \\[18pt] \text{Commutative Laws} & \begin{aligned} & p \lor q \equiv q \lor p \\ & p \land q \equiv q \land p \end{aligned} \\[18pt] \text{Associative Laws} & \begin{aligned} & (p \lor q) \lor r \equiv p \lor (q \lor r) \\ & (p \land q) \land r \equiv p \land (q \land r) \end{aligned} \\[18pt] \text{Distributive Laws} & \begin{aligned} & p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) \\ & p \land (q \lor r) \equiv (p \land q) \lor (p \land r) \end{aligned} \\[18pt] \text{De Morgan's Laws} & \begin{aligned} & \neg (p \land q) \equiv \neg p \lor \neg q \\ & \neg (p \lor q) \equiv \neg p \land \neg q \end{aligned} \\[18pt] \text{Absorption Laws} & \begin{aligned} & p \lor (p \land q) \equiv p \\ & p \land (p \lor q) \equiv p \end{aligned} \\[18pt] \text{Negation Laws} & \begin{aligned} & p \lor \neg p \equiv \mathbf{T} \\ & p \land \neg p \equiv \mathbf{F} \end{aligned} \end{array}$$
+
+## Equivalences for Conditional Statements
 
 The following involves *conditional statements*
 
@@ -28,6 +30,8 @@ The following involves *conditional statements*
 | $$(p \to q) \lor (p \to r) \equiv p \to (q \lor r)$$   |
 | $$(p \to r) \lor (q \to r) \equiv (p \land q) \to r$$  |
 
+## Equivalences for Biconditional Statements
+
 The following are logical equivalences involving *biconditional statements*
 
 | Equivalences                                                           |
@@ -37,7 +41,7 @@ The following are logical equivalences involving *biconditional statements*
 | $$p \leftrightarrow q \equiv (p \land q) \lor (\neg p \land \neg q) $$ |
 | $$ \neg (p \leftrightarrow q) \equiv p \leftrightarrow \neg q$$        |
 
-#### Example 1.3.3
+## Using Equivalences to Prove Logical Statements
 
 ##### Problem
 

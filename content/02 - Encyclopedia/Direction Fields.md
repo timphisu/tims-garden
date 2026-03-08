@@ -3,6 +3,7 @@ created: 202603022115
 reviewed: 202603022115
 tags:
   - math/concept
+  - math/topic/odes
 ---
 
 If $y(x)$ is a differentiable function, then $\frac{dy}{dx}$ gives the slope of a tangent line at a point. We can learn about the differential equation $\frac{dy}{dx} = f(x, y)$ by observing small segments of the tangent lines called **lineal elements**. 

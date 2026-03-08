@@ -2,7 +2,8 @@
 created: 2026-01-23 00:27
 reviewed: 2026-01-23 00:27
 tags:
-  - math/definition
+  - math/topic/algebra
+  - math/concept
 ---
 
 > [!definition]

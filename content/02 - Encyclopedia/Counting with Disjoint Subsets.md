@@ -3,6 +3,8 @@ created: 202602150959
 reviewed: 202602150959
 tags:
   - math/problems
+  - math/topic/counting
+  - math/theorem
 aliases:
 ---
 # Counting with Disjoint Subsets

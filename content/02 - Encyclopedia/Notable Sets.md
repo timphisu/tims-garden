@@ -2,7 +2,9 @@
 created: 202602171625
 reviewed: 202602171625
 tags:
-  - math/definition
+  - math/topic/set-theory
+  - math/topic/algebra
+  - math/concept
 ---
 
 The following sets play an important role in mathematics

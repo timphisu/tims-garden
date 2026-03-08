@@ -2,7 +2,8 @@
 created: 2026-01-28 19:35
 reviewed: 2026-01-28 19:35
 tags:
-  - math/definition
+  - math/topic/algebra
+  - math/building-blocks
 ---
 # Summations
 

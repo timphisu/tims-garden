@@ -2,7 +2,10 @@
 created: 202603051447
 reviewed: 202603051447
 tags:
-  - math/definition
+  - math/form
+  - math/problems
+  - math/theorem
+  - math/topic/odes
 ---
 # Exact Equations
 ## Motivations for Exact Equations
@@ -367,4 +370,4 @@ $$
 
 is the implicit solution to this differential equation.
 
-It can be easy to get lost without considering our [[Interval of Definition|interval of solution]]. Both in the original equation and in the solution, the problem prescribes $y \ne 0$ and $\sin x \ne 0$. Points where $\sin x = 0$ are $x = 0, \pi, ...$ so we can pick a continuous interval between these points. We choose the interval of solution to be $I = (0, \pi)$.
+It can be easy to get lost without considering our [[Interval of Solution|interval of solution]]. Both in the original equation and in the solution, the problem prescribes $y \ne 0$ and $\sin x \ne 0$. Points where $\sin x = 0$ are $x = 0, \pi, ...$ so we can pick a continuous interval between these points. We choose the interval of solution to be $I = (0, \pi)$.

@@ -3,6 +3,7 @@ created: 2026-01-28 19:36
 reviewed: 2026-01-28 19:36
 tags:
   - math/concept
+  - math/topic/algebra
 ---
 >[!definition]
 > A *recurrence relation* for the sequence $a_{n}$ is an equation that expresses $a_{n}$ in terms of one or more of the previous terms of the sequence, namely, $a_{0}, a_{1}, ..., a_{n-1}$ for all integers $n \geq n_{0}$, where $n_{0}$ is a nonnegative integer. 

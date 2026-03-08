@@ -3,6 +3,7 @@ created: 202602211228
 reviewed: 202602211228
 tags:
   - math/problems
+  - math/topic/odes
 ---
 
 ## Method to Solving Separable Equations
@@ -12,7 +13,6 @@ The method to solving separable equations is
 1. Separate variables $x$ and $y$ such that we get a form $f(x)\, dx = g(y)\, dy$ 
 
 2. Integrate on both sides
-
 ## Kinds of Separable Equations Problems
 
 ### Inverse Form
@@ -307,5 +307,3 @@ $$
 $$
 
 > Note for this problem that there was no variable of $t$ on the RHS. This form of separable equation $\frac{dy}{dx} = f(y)$ is called an [[Autonomous Equations|autonomous equaiton]]
-
----

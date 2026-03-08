@@ -3,6 +3,7 @@ created: 202602261007
 reviewed: 202602261007
 tags:
   - math/problems
+  - math/topic/odes
 ---
 
 ### Motivations

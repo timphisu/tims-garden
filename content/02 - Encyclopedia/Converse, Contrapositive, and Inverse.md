@@ -2,7 +2,8 @@
 created: 202602101357
 reviewed: 2026-02-10
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/logic
 ---
 
 Based on the condition $p \to q$, we can create new conditions:

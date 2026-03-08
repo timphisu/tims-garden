@@ -1,12 +1,15 @@
 ---
-created: 202602212000
-reviewed: 202602212000
+created: 202603071235,
+reviewed: 202603071235
 tags:
-  - math/definition
+  - math/topic/set-theory
+  - math/building-blocks
+  - math/concept
+  - math/topic/counting
 ---
 
 > [!definition]
-> Let $A$ and $B$ be sets. The *intersection* of the sets $A$ and$B$, denoted by $A \cap B$, is the set containing those elements in both $A$ and $B$.
+> Let $A$ and $B$ be sets. The *intersection* of the sets $A$ and $B$, denoted by $A \cap B$, is the set containing those elements in both $A$ and $B$.
 
 An element $x$ belongs to the intersection of the sets $A$ and $B$ if and only if $x$ belongs $A$ and $x$ belongs $B$. This tells us that
 
@@ -16,7 +19,7 @@ $$
 
 ![[Pasted image 20260119113119.png|300]]
 
-#### Examples 
+#### Example of Intersecting Sets
 
 The intersection of the sets $\{ 1, 3, 5 \}$ and $\{ 1, 2, 3 \}$ is the set $\{ 1, 3 \}$. That is, 
 

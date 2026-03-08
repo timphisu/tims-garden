@@ -3,6 +3,7 @@ created: 202602101319
 reviewed: 2026-02-10
 tags:
   - math/problems
+  - math/topic/logic
 ---
 
 We can use truth tables to determine the truth values of compound propositions, where each separate column shows the truth values for each expression

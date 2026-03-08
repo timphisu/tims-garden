@@ -1,13 +1,10 @@
 ---
-created: 2026-02-17 16:21
-reviewed: 2026-02-17 16:21
+created: 202603071648,
+reviewed: 202603071648
 tags:
-  - math/subject/calculus
+  - math/building-blocks
+  - math/topic/calculus
 ---
-
-# Sequences
-
-## The Limit of a Sequence
 
 ### Definitions
 
@@ -118,4 +115,4 @@ $$
 
 > [!theorem]
 > If $a_{n} \leq b_{n} \leq c_{n}$ for $n\geq n_{0}$ and $\lim_{ n \to \infty }a_{n}= \lim_{ n \to \infty }c_{n}=L$ , then $\lim_{ n \to \infty }b_{n} = L$
-> 
+>

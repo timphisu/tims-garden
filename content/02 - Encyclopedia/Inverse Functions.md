@@ -2,7 +2,9 @@
 created: 2026-01-23 00:26
 reviewed: 2026-01-23 00:26
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/set-theory
+  - math/topic/algebra
 ---
 > [!definition]
 Let $f$ be a one-to-one correspondence from the set $A$ to the set $B$. The **inverse** function of $f$ is the function that assigns to an element $b$ belonging to $B$ the unique element $a$ in $A$ such that $f(a) = b$ The inverse function of $f$ is denoted $f^{-1}$. Hence, $f^{-1}(b) = a$ when $f(a) = b$.

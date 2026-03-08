@@ -2,7 +2,9 @@
 created: 202602101319
 reviewed: 2026-02-10
 tags:
-  - math/definition
+  - math/concept
+  - math/building-blocks
+  - math/topic/logic
 ---
 
 A **proposition** is a declarative statement (asserts an idea rather than a command or interrogative) that has a single truth value such as $T$ or $F$. Propositions can be denoted in variables $p,r, s, t$ . A proposition which cannot be broken down any further is called an *atomic proposition*.

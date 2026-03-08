@@ -2,7 +2,8 @@
 created: 2026-01-28 19:35
 reviewed: 2026-01-28 19:35
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/algebra
 ---
 When we can express a sequence in terms of a formula, we call that a *progression*
 #### Geometric Progression

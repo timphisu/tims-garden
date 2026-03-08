@@ -2,7 +2,8 @@
 created: 202602031635
 reviewed: 2026-02-03
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/set-theory
 ---
 
 While sets are unordered, **ordered n-tuples** represent collections that are ordered

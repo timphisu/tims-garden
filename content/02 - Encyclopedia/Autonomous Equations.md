@@ -2,7 +2,8 @@
 created: 2026-02-25 09:23
 reviewed: 2026-02-25 09:23
 tags:
-  - math/definition
+  - math/form
+  - math/topic/odes
 ---
 
 ## Definition

@@ -2,7 +2,9 @@
 created: 202602211223
 reviewed: 202602211223
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/form
+  - math/topic/odes
 ---
 # Separable Equations
 

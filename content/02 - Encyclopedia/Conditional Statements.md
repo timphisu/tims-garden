@@ -2,7 +2,9 @@
 created: 202602101319
 reviewed: 2026-02-10
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/concept
+  - math/topic/logic
 ---
 
 A conditional statement or the **implication** $p \to q$ is the proposition "if $p$, then $q$" . In a conditional statement, $p$ is called the *hypothesis* (or antecedent or premise) and $q$ is called the *conclusion* (or consequence).

@@ -2,7 +2,9 @@
 created: 202602260955
 reviewed: 202602260955
 tags:
-  - math/definition
+  - math/topic/odes
+  - math/building-blocks
+  - math/form
 ---
 # Linear Differential Equations
 ## Definition

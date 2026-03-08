@@ -3,6 +3,7 @@ created: 202602101322
 reviewed: 2026-02-10
 tags:
   - math/concept
+  - math/topic/logic
 ---
 
 For compound propositions $p$ and $q$, when truth values for all possible cases of $p$ are equal to values of $q$, then we say they are **logically equivalent**

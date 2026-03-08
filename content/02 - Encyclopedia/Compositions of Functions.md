@@ -2,7 +2,8 @@
 created: 2026-01-23 00:24
 reviewed: 2026-02-02
 tags:
-  - math/definition
+  - math/building-blocks
+  - math/topic/algebra
 ---
 
 

@@ -2,7 +2,9 @@
 created: 202602031357
 reviewed: 2026-02-03
 tags:
-  - math/definition
+  - math/topic/counting
+  - math/theorem
+  - math/concept
 ---
 
 > [!definition]

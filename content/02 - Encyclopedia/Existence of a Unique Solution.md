@@ -3,6 +3,7 @@ created: 202602270054
 reviewed: 202602270054
 tags:
   - math/theorem
+  - math/topic/odes
 ---
 
 > [!theorem]
@@ -10,4 +11,5 @@ tags:
 > 
 > * *Solve:* $\displaystyle \frac{dy}{dx} = f(x, y)$
 > * *Subject to:* $\displaystyle y(x_{0}) = y_{0}$
->
+
+

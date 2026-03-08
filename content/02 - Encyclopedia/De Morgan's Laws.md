@@ -3,6 +3,7 @@ created: 202602101321
 reviewed: 2026-02-10
 tags:
   - math/theorem
+  - math/topic/logic
 ---
 
 $$

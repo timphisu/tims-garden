@@ -2,11 +2,13 @@
 created: 202602031357
 reviewed: 2026-02-03
 tags:
-  - math/definition
+  - math/theorem
+  - math/concept
+  - math/topic/counting
 ---
 # Subtraction Rule
 
-## Definition[es](https://help.obsidian.md/embeds).
+## Definition
 
 > [!definition]
 > **Subtraction Rule**
