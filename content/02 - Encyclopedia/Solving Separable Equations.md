@@ -252,6 +252,19 @@ $$
 > [!note]
 > This is an example of an [[integral-defined solution]] when a nonelementary integral is involved so we use the FTC I definition of an antiderivative to still give a valid solution. This kind of solution is useful when there's an elementary solution for $f(y)$ but a nonelementary solution for $g(x)$.
 
+---
+
+**Problem:** Solve the following IVP
+
+$$
+(1 + x^{4})\, dy + x(1 + 4y^{2})\, dx = 0, \quad y(1) = 0
+$$
+
+**Approach:** By rearranging the equation by dividing both sides by $(1+x^{4})$ and then $(1+4y^{2})$ as to group $x$'s with $dx$'s and $y$'s with $dy$'s.
+
+$$
+\frac{1}{1 + 4y^{2}}\, dy + \frac{x}{1 + x^{4}}\, dx 
+$$
 
 ---
 
@@ -306,4 +319,46 @@ $$
 \end{align}
 $$
 
-> Note for this problem that there was no variable of $t$ on the RHS. This form of separable equation $\frac{dy}{dx} = f(y)$ is called an [[Autonomous Equations|autonomous equaiton]]
+> Note for this problem that there was no variable of $t$ on the RHS. This form of separable equation $\frac{dy}{dx} = f(y)$ is called an [[Autonomous Equations|autonomous equation]]
+
+---
+
+**Problem:** Solve
+
+$$
+\frac{dP}{dt} = P - P^{2}
+$$
+
+**Approach:** This is an autonomous equation, which rearranging gives us 
+
+$$
+\frac{1}{P(1 - P)}\, dP = dt
+$$
+
+where we can quickly see the denominator on the LHS is a product of linear factors; this tell us we can do rational decomposition.
+
+$$
+\begin{align}
+ & \frac{A}{P} + \frac{B}{1-P} = \frac{1}{P(1-P)} \\ \\
+ & A(1-P) + BP = 1 & \text{Mult. both sides by LCD} \\ \\
+\end{align}
+$$
+
+If $P = 0$, then $A = 1$, and if $P = 1$, then $B = 1$. 
+
+The original DE becomes
+
+$$
+\begin{align} \\
+ & \left( \frac{1}{P} + \frac{1}{1-P} \right)\, dP = dt \\ \\
+ & \int \left( \frac{1}{P} + \frac{1}{1-P} \right) \, dP = \int dt  & \text{Integrate both sides} \\ \\
+ & \ln|P| + \ln|1-P| = t + C_{0} \\ \\
+ & \ln|P(1-P)| = t+C_{0} \\ \\
+ & P(1-P) = e^{t + C_{0}} & \text{Raise both sides to }e \\ \\
+ & P(1-P) = Ce^{t} & \text{Let } C = e^{C_{0}} \\ \\
+\end{align}
+$$
+
+Then the solution
+
+

@@ -10,7 +10,7 @@ aliases:
 # Interval of Solution
 
 > [!definition]
-> The **interval of definition**, **interval of validity**, or **domain of solution**, denoted as $I$, is the specific set of independent variable values for which a differential equation is valid.
+> The **interval of definition**, **interval of validity**, or **domain of solution**, denoted as $I$, is the set of independent variable values for which a differential equation is valid.
 
 ## Core Requirements for $I$
 
@@ -22,13 +22,9 @@ For a function $\phi(x)$ to be considered a solution on an interval $I$, it must
 
 3. *Initial Condition*: In the context of an [[Initial Value Problems|initial value problem]] where $\phi(x_{0}) = y_{0}$, the interval $I$ **must contain** $x_{0}$.
 
-### Domain vs. Interval of Validity
-
-It is crucial to distinguish the mathematical domain of the function and its validity as an ODE solution: 
-
-* The **mathematical domain** is all values where the expression for $\phi(x)$ is defined 
-
-* The **interval of validity** is generally a [[Subsets|subset]] of the mathematical domain, restricted to a single continuous piece that contains the initial point and maintains differentiability.
+> [!info] Domain vs. Interval of Validity
+> It is crucial to distinguish the mathematical domain of the function and its validity as an ODE solution: The *mathematical domain* is all values where the expression for $\phi(x)$ is defined while the *interval of validity* is generally a [[Subsets|subset]] of the mathematical domain, restricted to a single continuous piece that contains the initial point and maintains differentiability.
+> 
 
 ## Steps for Finding the Interval of Solution
 
