@@ -123,3 +123,62 @@ And then resubstituting for $y$,
 $$
 y = \left( -\frac{1}{2}e^{x} + Ce^{ -x }\right)^{-1} 
 $$
+
+---
+
+**Problem:** Solve
+
+$$
+\frac{dy}{dx} = y(xy^{4} - 1)
+$$
+
+**Approach:** Rewriting in a form we are more familiar with,
+
+$$
+\begin{align}
+ & \frac{dy}{dx} = xy^{5} - y \\ \\
+ & y' + y = xy^{5}
+\end{align}
+$$
+
+> For Bernoulli equations, the $u$-substitution is not concerned with the differential, but rather the derivative $\frac{dy}{dx}$
+
+We can make the substitution $u = y^{-4}$ which is $y = u^{-1/4}$ and the derivative becomes $y' = -\frac{1}{4}u^{-5/4}u'$.
+
+Our substituted DE becomes
+
+$$
+\begin{align}
+ & -\frac{1}{4}u^{-5/4}u' + u^{-1/4} = xu^{-5/4} \\ \\
+ & u' -4u = -4x  & \text{Std. Form}\\ \\
+\end{align}
+$$
+
+> Note that the 2nd term on the LHS must only have a factor of $u$ to the first degree; otherwise, the equation is not linear and the method of solution does not work.
+
+By inspection, the integrating factor becomes $\mu = e^{-4x}$ and solving for $u$ involves
+
+$$
+\begin{align}
+ \mu \cdot u  & = \int \mu f(x)\, dx \\ \\
+	& = \int -4xe^{-4x}\, dx = \int x\, de^{-4x} \\ \\
+    & = \left( xe^{-4x} - \int e^{-4x}\, dx \right) \\ \\
+    & = \left( xe^{-4x} + \frac{1}{4} e^{ -4x } \right) + C \\ \\
+e^{4x}u    & = e^{-4x} \left( x + \frac{1}{4} \right) + C \\ \\
+u   & = x + \frac{1}{4} + Ce^{4x}    
+\end{align}
+$$
+
+> [!caution]
+> Since we're doing a lot of substitutions in [[2.5 - Substitutions]], it can be easy to switch up the substitution done in [[Homogeneous Equations|homogeneous equations]] where $u = {y}/{x}$, and when resubstituting at this point, say the solution is just $y$ when we distribute the $x$ over to the RHS. 
+> 
+> We have to remind ourselves that we are strictly doing <u>Bernoulli Equation</u> problems where we've chosen $u = y^{1-n}$ which makes $y = u^{1/(1-n)}$, so when resubstituting we should expect to be raising what we've solved for $u$ to the $\frac{1}{1-n}$-th power.
+
+Since $y = u^{-1/4}$,
+
+$$
+y(x) = \left( x + \frac{1}{4} + Ce^{ 4x } \right)^{-1/4}
+$$
+
+solves our differential equation. 
+

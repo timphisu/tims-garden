@@ -128,8 +128,8 @@ Now you could move $\frac{dx}{x}$ on one hand and integrate, but since integrati
 
 $$
 \begin{align}
- & \int \frac{dx}{x} + \int\left( \frac{1-u}{1+u} \right)\, du = \int 0 \\ \\
- & \int \frac{dx}{x} + \int\left( \frac{2}{u+1} - 1 \right)\, du = \int 0 & \text{Long division: } \frac{1-u}{1+u} = \frac{2}{u+1} - 1 \\ \\
+ & \int \frac{dx}{x} + \int\left( \frac{1-u}{1+u} \right)\, du = \int 0\, dx \\ \\
+ & \int \frac{dx}{x} + \int\left( \frac{2}{u+1} - 1 \right)\, du = \int 0\, dx & \text{Long division: } \frac{1-u}{1+u} = \frac{2}{u+1} - 1 \\ \\
  & \ln|x| + 2\ln|u+1| - u = C
 \end{align}
 $$
@@ -146,3 +146,77 @@ $$
 $$
 
 gives us the implicit solution after making appropriate simplifications.
+
+---
+
+**Problem:** Solve the given homogeneous differential equation by using an appropriate substitution.
+
+$$
+y\, dx = 2(x+y)\, dy
+$$
+
+**Approach:** Rewriting in the differential form
+
+$$
+y\, dx - 2(x+y)\, dy = 0
+$$
+
+We know this is homogeneous, so we can go straight into using the method of substituting $x = vy$ (by inspection the $dx$ term is much easier to split) which makes our differential to be $dx = y\, dv + v\, dy$. 
+
+Substituting all this information together,
+
+$$
+\begin{align}
+ & y(y\, dv + v\, dy) - 2(vy + y)\, dy = 0 \\ \\
+ & y^{2}\, dv + (vy - 2vy - 2y)\, dy = 0 \\ \\
+ & y^{2}\, dv - (v + 2)y\, dy = 0 \\ \\
+ & y\, dv - (v+2)\, dy = 0 \\ \\
+ & \frac{dy}{y} - \frac{dv}{v+2} = \int 0\, dv \\ \\
+ & \ln|y| - \ln|v+2| = C_{0} \\ \\
+ & \ln \left| \frac{y}{v+2} \right| = C_{0} \\ \\
+ & \frac{y}{v+2} = C_{1} \\ \\
+ & y = C_{1}(v+2) \\ \\
+ & y = C(v+2) \\ \\
+ & y = C\left( \frac{x}{y} + 1 \right) \\ \\
+ & y = \frac{C(x+y)}{y} \\ \\
+ & \boxed{ y^{2} = C(x+y) } 
+\end{align}
+$$
+
+Our final implicit solution is shown above in the box.
+
+---
+
+**Problem:** Solve
+
+$$
+\frac{dy}{dx} = \frac{y-x}{y+x}
+$$
+
+**Approach:** Writing in its differential form,
+
+$$
+\begin{align}
+ & dy = \left( \frac{y-x}{y+x} \right) \, dx \\ \\
+ & \left( \frac{x - y}{y + x} \right) \, dx + dy= 0 \\ \\
+\end{align}
+$$
+
+We can then do a substitution $y = ux$, and $dy = u\, dx + x\, du$. 
+
+$$
+\begin{align}
+ & \left( \frac{x - ux}{ux + x} \right) \, dx + (u\, dx + x\, du) = 0 \\ \\
+ & \left( \frac{x - ux}{ux + x} + u \right) \, dx + x\, du = 0 \\ \\
+ & \left( \frac{x - ux + ux + u^{2}x}{ux+x} \right)\, dx + x\, du = 0 \\ \\
+ & \left( \frac{x + u^{2}x}{ux + x} \right)  \, dx + x\, du = 0 \\ \\
+ & \left( \frac{1 + u^{2}}{1 + u} \right)\, dx + x\, du = 0 \\ \\
+ & \frac{dx}{x} + \left( \frac{1+u}{1+u^{2}} \right)\, du = 0 \\ \\
+ & \int \frac{dx}{x} + \int \left( \frac{1+u}{1+u^{2}} \right) \, du = \int 0\, dx \\ \\
+ & \int \frac{dx}{x} + \int \left( \frac{1}{1+u^{2}} + \frac{u}{1+u^{2}} \right) \, du = \int 0\, dx \\ \\
+ & \ln|x| + \arctan(u) + \frac{1}{2}\ln|1+u^{2}| = C \\ \\
+ & \ln|x| + \arctan\left( \frac{y}{x} \right) + \ln \left| \frac{\sqrt{ x^{2} + y^{2} }}{x} \right| = C \\ \\
+ & \ln|x| - \ln|x| + \arctan\left( \frac{y}{x} \right) + \ln \left| \sqrt{ x^{2} + y^{2} } \right| = C \\ \\
+ & \arctan\left( \frac{y}{x} \right) + \ln \left| \sqrt{ x^{2} + y^{2} } \right| = C
+\end{align}
+$$

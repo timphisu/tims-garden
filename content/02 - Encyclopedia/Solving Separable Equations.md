@@ -293,6 +293,83 @@ $$
 > Since $y$ cannot be isolated on its own, we say this is an [[Differential Equations#Types of Solutions|implicit solution]]
 
 ---
+
+**Problem:** Solve
+
+$$
+\frac{dy}{dx} = \frac{e^{\sqrt{ x }}}{y}, \quad y(1) = 10
+$$
+
+**Approach:** Rearranging and then integrating both sides, we can get
+
+$$
+\begin{align}
+ \int y\, dy & = \int e^{\sqrt{ x }}\, dx \\ \\
+ & =  xe^{\sqrt{ x }} - \int x\, de^{\sqrt{ x }} \\ \\
+ & =  xe^{\sqrt{ x }} - \int x \cdot \frac{e^{\sqrt{ x }}}{2\sqrt{ x }}\, dx \\ \\
+ & = xe^{ \sqrt{ x } } - \frac{1}{2} \int \sqrt{ x }e^{\sqrt{ x }}\, dx
+\end{align}
+$$
+
+Now focusing our attention towards the integral on the RHS, we can do a $u$-substitution that allows us to do a more workable IBP
+
+$$
+u = \sqrt{ x } \to u^{2} = x \to dx = 2u \, du
+$$
+
+so the integral becomes
+
+$$
+\begin{align}
+ \int \sqrt{ x }e^{\sqrt{ x }}\, dx & = \int ue^{u} (2u\, du) \\ \\
+  & = 2 \int u^{2} e^{u}\, du = 2 \int u^{2}\, de^{u} \\ \\
+  & = 2 \left( u^{2}e^{ u } - \int e^{ u }\, du^{2} \right) \\ \\
+  & = 2 \left( u^{2}e^{ u } - 2 \int ue^{u}\, du \right) = 2 \left( u^{2}e^{ u } - 2 \int u\, de^{ u } \right)\\ \\
+  & = 2 \left( u^{2}e^{ u } - 2 \left( ue^{u} - \int e^{u}\, du  \right)  \right) \\ \\
+  & = 2 \left( u^{2}e^{ u } - 2ue^{ u } + 2e^{ u } \right) \\ \\
+  & = 2 \left( xe^{\sqrt{ x }} - 2\sqrt{ x }e^{\sqrt{ x }} + 2e^{ \sqrt{ x } } \right) \\ \\  
+\end{align}
+$$
+
+Now resubstituting this back into our original differential equation
+
+$$
+\begin{align}
+\int y\, dy  & = xe^{ \sqrt{ x } } - \left( xe^{ \sqrt{ x } } - 2\sqrt{ x }e^{ \sqrt{ x } } + 2e^{ \sqrt{ x } } \right) \\ \\
+\frac{1}{2}y^{2} & = 2\sqrt{ x }e^{ \sqrt{ x } } - 2e^{ \sqrt{ x } } + C \\ \\
+C  & = y^{2} - 4\sqrt{ x }e^{ \sqrt{ x } } + 4e^{ \sqrt{ x } }
+\end{align}
+$$
+
+Implementing the initial condition, $y(1) = 10$,
+
+$$
+C = 10^{2} - 4(1)e^{1} + 4e^{1}= 100
+$$
+
+When getting the explicit solution, we pick the positive part of the square root since it contains our initial condition $(1, 10)$
+
+$$
+\begin{align}
+\frac{1}{2} y^{2}  & = 2\sqrt{ x }e^{ \sqrt{ x } } - 2e^{ \sqrt{ x } } + 100 \\ \\
+y^{2}  & = 4\sqrt{ x }e^{ \sqrt{ x } } - 4e^{ \sqrt{ x } } + 200 \\ \\
+y  & = \sqrt{ 4\sqrt{ x }e^{ \sqrt{ x } } - 4e^{ \sqrt{ x } } + 200 } \\ \\
+y & = 2\sqrt{ \sqrt{ x }e^{ \sqrt{ x } } - e^{ \sqrt{ x } } + 50 }
+\end{align}
+$$
+
+---
+
+**Problem:** Find the general solution of the given differential equation
+
+$$
+x \frac{dy}{dx} + 5y = x^{3} - x
+$$
+
+
+
+---
+
 ### Solving Separable Autonomous Equations
 
 **Problem:** Find $Q$ given

@@ -371,3 +371,90 @@ $$
 is the implicit solution to this differential equation.
 
 It can be easy to get lost without considering our [[Interval of Solution|interval of solution]]. Both in the original equation and in the solution, the problem prescribes $y \ne 0$ and $\sin x \ne 0$. Points where $\sin x = 0$ are $x = 0, \pi, ...$ so we can pick a continuous interval between these points. We choose the interval of solution to be $I = (0, \pi)$.
+
+---
+
+**Problem:** Solve the given differential equation
+
+$$
+(x^{2} + y^{2} - 7)\, dx = (xy + y)\, dy, \quad y(0) = 1
+$$
+
+**Approach:** Rearranging the equation, 
+
+$$
+(x^{2} + y^{2} - 7)\, dx - (x+1)y\, dy = 0
+$$
+
+We'll find by inspection that $M_{y} \ne N_{x}$, but if we can introduce an integrating factor $\mu = e^{\int P\, dx}$ where
+
+$$
+P(x) = \frac{M_{y} - N_{x}}{N} = \frac{2y - (-y)}{-(x+1)y} = -\frac{3y}{(x+1)y} = -\frac{3}{x+1}
+$$
+
+> Note that $P(x)$ must be in terms of only $x$; otherwise, we can't go any further
+
+which makes
+
+$$
+\mu = e^{\large \int - \frac{3}{x+1}\, dx} = e^{-3 \ln|x+1|} = \frac{1}{(x+1)^{3}}
+$$
+
+> [!caution]
+> It's very easy after finding the integrating factor that we should then solve this like a linear equation, such as $\mu \cdot y = \int \mu f(x)\, dx$ where $f(x) = 0$, since that's how we were first introduced to integrating factors in solving linear equations. But we must remind ourselves that we are dealing with <u>exact equations</u> where our task is to find $f(x, y)$, not just $y$.
+
+Now introducing the integrating factor into the DE by multiplying both sides by $\mu$
+
+$$
+\frac{x^{2} + y^{2} - 7}{(x+1)^{3}}\, dx - \frac{y}{(1+x)^{2}}\, dy = 0
+$$
+
+In our task of finding $f(x, y)$, we find the $dy$ term to be easier to integrate while holding $x$ constant
+
+$$
+f(x,y) = \int \mu N\, dy = -\frac{1}{(1+x)^{2}} \int y\, dy = -\frac{y^{2}}{2(1+x)^{2}} + h(x)
+$$
+
+Then, taking the partial w.r.t. $x$,
+
+$$
+f_{x} = \frac{y^{2}}{(1+x)^{3}} + h'(x) = N(x, y)
+$$
+
+And by inspection, we see that the missing terms are
+
+$$
+h'(x) = \frac{x^{2} - 7}{(x+1)^{3}} = \frac{x - 1}{(x+1)^{2}} - \frac{6}{(x+1)^{3}} = \frac{1}{x+1} - \frac{2}{(x+1)^{2}} - \frac{6}{(x+1)^{3}}
+$$
+
+which gives
+
+$$
+\begin{align}
+h(x) & = \int \left[ \frac{1}{x+1} - \frac{2}{(x+1)^{2}} - \frac{6}{(x+1)^{3}} \right] \, dx \\ \\
+ & = \ln|x+1| + \frac{2}{x+1} + \frac{3}{(x+1)^{2}} + k
+\end{align}
+$$
+
+The general solution $f(x, y) = C$ is
+
+$$
+\begin{align}
+ & f(x, y) = C \\ \\
+ & h(x) - \frac{y^{2}}{2(x+1)^{2}} = C \\ \\
+ & \ln|x+1| + \frac{2}{x+1} + \frac{6-y^{2}}{2(x+1)^{2}} = C
+\end{align}
+$$
+
+and when our initial condition $y(0) = 1$ is implemented
+
+$$
+\ln|1| + 2 + \frac{6 - 1}{2} = C \to C = \frac{9}{2}
+$$
+
+The solution curve to this IVP problem is
+
+$$
+\ln|x+1| + \frac{2}{x+1} + \frac{6-y^{2}}{2(x+1)^{2}} = \frac{9}{2}
+$$
+
