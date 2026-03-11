@@ -263,7 +263,34 @@ $$
 **Approach:** By rearranging the equation by dividing both sides by $(1+x^{4})$ and then $(1+4y^{2})$ as to group $x$'s with $dx$'s and $y$'s with $dy$'s.
 
 $$
-\frac{1}{1 + 4y^{2}}\, dy + \frac{x}{1 + x^{4}}\, dx 
+\frac{1}{1 + 4y^{2}}\, dy + \frac{x}{1 + x^{4}}\, dx = 0
+$$
+
+Then integrating both sides,
+
+$$
+\begin{align}
+ & \int \frac{1}{1 + 4y^{2}}\, dy + \int \frac{x}{x + x^{4}}\, dx = \int 0\, dx \\ \\
+ & \frac{1}{2} \arctan(2y) + \frac{1}{2}\arctan(x^{2}) = C
+\end{align}
+$$
+
+Then substituting for the initial condition
+
+$$
+\frac{1}{2}\arctan(0) + \frac{1}{2}\arctan(1) = C \to C = \frac{\pi}{8}
+$$
+
+So the solution which solves the IVP is
+
+$$
+\arctan(x^{2}) + \arctan(2y) = \frac{\pi}{4}
+$$
+
+or explicitly,
+
+$$
+y = \frac{1}{2}\tan\left( \frac{\pi}{4} - \arctan(x^{2}) \right)
 $$
 
 ---
@@ -360,16 +387,6 @@ $$
 
 ---
 
-**Problem:** Find the general solution of the given differential equation
-
-$$
-x \frac{dy}{dx} + 5y = x^{3} - x
-$$
-
-
-
----
-
 ### Solving Separable Autonomous Equations
 
 **Problem:** Find $Q$ given
@@ -429,13 +446,24 @@ $$
 \begin{align} \\
  & \left( \frac{1}{P} + \frac{1}{1-P} \right)\, dP = dt \\ \\
  & \int \left( \frac{1}{P} + \frac{1}{1-P} \right) \, dP = \int dt  & \text{Integrate both sides} \\ \\
- & \ln|P| + \ln|1-P| = t + C_{0} \\ \\
- & \ln|P(1-P)| = t+C_{0} \\ \\
- & P(1-P) = e^{t + C_{0}} & \text{Raise both sides to }e \\ \\
- & P(1-P) = Ce^{t} & \text{Let } C = e^{C_{0}} \\ \\
+ & \ln|P| - \ln|1-P| = t + C_{0} \\ \\
+ & \ln \left|\frac{P}{1-P} \right| = t+C_{0} \\ \\
+ & \frac{P}{1-P} = e^{t + C_{0}} & \text{Raise both sides to }e \\ \\
+ & \frac{P}{1-P} = Ce^{t} & \text{Let } C = e^{C_{0}} \\ \\
 \end{align}
 $$
 
-Then the solution
+Then the solution becomes
 
+$$
+\begin{align}
+ & \frac{P}{1-P} = Ce^{t} \\ \\
+ & P = Ce^{ t }(1-P) \\ \\
+ & P = Ce^{ t } - CPe^{ t } \\ \\
+ & P + CPe^{ t } = Ce^{ t } \\ \\
+ & P(1 + Ce^{ t }) = Ce^{ t } \\ \\
+ & \boxed{ P(t) = \frac{Ce^{ t }}{1 + Ce^{ t }} } 
+\end{align}
+$$
 
+> This problem is related to the [[logistic model]]. 

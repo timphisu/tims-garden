@@ -164,7 +164,7 @@ $$
 	& = \int -4xe^{-4x}\, dx = \int x\, de^{-4x} \\ \\
     & = \left( xe^{-4x} - \int e^{-4x}\, dx \right) \\ \\
     & = \left( xe^{-4x} + \frac{1}{4} e^{ -4x } \right) + C \\ \\
-e^{4x}u    & = e^{-4x} \left( x + \frac{1}{4} \right) + C \\ \\
+e^{-4x}u    & = e^{-4x} \left( x + \frac{1}{4} \right) + C \\ \\
 u   & = x + \frac{1}{4} + Ce^{4x}    
 \end{align}
 $$
