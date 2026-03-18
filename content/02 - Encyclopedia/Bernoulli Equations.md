@@ -170,7 +170,7 @@ u   & = x + \frac{1}{4} + Ce^{4x}
 $$
 
 > [!caution]
-> Since we're doing a lot of substitutions in [[2.5 - Substitutions]], it can be easy to switch up the substitution done in [[Homogeneous Equations|homogeneous equations]] where $u = {y}/{x}$, and when resubstituting at this point, say the solution is just $y$ when we distribute the $x$ over to the RHS. 
+> Since we're doing a lot of substitutions in [[2.5 - Substitutions]], it can be easy to switch up the substitution done in [[Homogeneous Functions|homogeneous equations]] where $u = {y}/{x}$, and when resubstituting at this point, say the solution is just $y$ when we distribute the $x$ over to the RHS. 
 > 
 > We have to remind ourselves that we are strictly doing <u>Bernoulli Equation</u> problems where we've chosen $u = y^{1-n}$ which makes $y = u^{1/(1-n)}$, so when resubstituting we should expect to be raising what we've solved for $u$ to the $\frac{1}{1-n}$-th power.
 

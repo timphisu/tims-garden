@@ -25,6 +25,3 @@ tags:
 
 The values of $y(x)$ and its first $n-1$ at $x_{0}$, namely $y(x_{0}) = y_{0}, y'(x_{0}) = y_{1}, ..., y^{(n-1)}(x_{0}) = y_{n-1}$ are called **initial conditions (IC)**.
 
-### Examples of IVPs
-
-> Please see [[Solving Separable Equations#^d9c952|here]], [[Solving Separable Equations#^d3ab56|here]], and [[Solving Separable Equations#^42cbe6|here]] for examples of what *initial value problems* look like and how they can be solved

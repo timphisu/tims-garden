@@ -1,26 +1,10 @@
 ---
-created: 202603071143
-reviewed: 202603071143
+created: 202603161312,
+reviewed: 202603161312
 tags:
-  - math/form
   - math/problems
   - math/topic/odes
 ---
-
-## Property of Homogeneous Functions
-
-> [!definition]
-> If a function $f(x, y)$ has the property
-> 
-> $$
-> f(tx, ty) = t^{\alpha}f(x, y)
-> $$
-> 
-> where $\alpha$ is some real number, then $f$ is said to be *homogeneous* of degree $\alpha$.
-
-For a function to be homogeneous, when factoring out $t^{\alpha}$, there should be no instances of $t$ left inside the expression; otherwise, it is *not* homogeneous.
-
-## Using Substitution to Solve Homogeneous Equations
 
 #### Motivations
 
