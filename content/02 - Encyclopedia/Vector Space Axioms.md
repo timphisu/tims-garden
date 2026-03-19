@@ -1,6 +1,9 @@
 ---
 created: 202603141122,
 reviewed: 202603141122
+tags:
+  - math/topic/algebra
+  - math/building-blocks
 ---
 # Vector Space Axioms
 

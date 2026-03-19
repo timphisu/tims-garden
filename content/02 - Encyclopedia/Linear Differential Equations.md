@@ -7,7 +7,9 @@ tags:
   - math/form
 ---
 # Linear Differential Equations
-## Definition
+## Forms of Linear DEs
+
+### First-Order Form
 
 > [!definition]
 > A first-order differential equation of the form
@@ -17,6 +19,9 @@ tags:
 > $$
 > 
 > is said to be a **linear equation** in the variable $y$
+
+### Higher-Order Form
+
 
 ## Examples of Linear Equations
 
