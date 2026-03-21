@@ -13,7 +13,7 @@ $r$-permutations of a set with $n$ distinct elements
 > See that if we were interested in the count of ordered arrangements of $n$ with length $n$, then the count becomes $P(n, n) = n!$
 #### Intuition
 
-Why would we stop at $(n-r+1)$? If we visualize the process of counting permutations as filling slots. Really we're asking, "How many ways can we fill $r$ distinct positions with $n$ available objects?"
+Why would we stop at $(n-r+1)$? If we visualize the process of counting permutations as filling slots. Really we're asking, "How many ways can we fill $r$ distinct positions with $n$ available objects?".
 
 Suppose you have $r$ empty slots to fill
 
