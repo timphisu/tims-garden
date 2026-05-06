@@ -1,0 +1,308 @@
+---
+created: 202603271321,
+reviewed: 202603271321
+tags:
+  - math/concept
+  - math/topic/odes
+  - unfinished
+---
+
+# Variation of Parameters
+
+> [!definition]
+> **Variation of parameters** involves finding a particular solution of the form $y_{p} = u_{i}(x) \cdot y_{i}(x)$ $\forall i = 1, 2, ..., n$ for an $n$th-order linear differential equation by replaying $c_{i}$ for functions $u_{i}$ known as *variable parameters*.
+
+It is said *variation of parameters* has a distinct advantage over the [[Method of Undetermined Coefficients|method of undetermined coefficients]] in that it will <u>always</u> yield a particular solution $y_{p}$ , assuming that the associated homogeneous equation can be solved. This method is not limited to the input function $f(x)$ being one of the four basic types, where it is more applicable to linear DEs with variable coefficients, that is, $a_{1}(x), a_{2}(x), ..., a_{n}(x)$. 
+## Motivations
+
+Consider a 2nd-order linear differential equation `(*)` :
+
+$$
+\frac{d^{2}x}{dx^{2}} + P(x) \frac{dy}{dx} + Q(x)y = f(x)
+$$
+
+whose complementary solution is $y_{c} = c_{1}y_{1} + c_{2}y_{2}$. 
+
+Can we replace $c_{1}, c_{2}$ with $u_{1}, u_{2}$ respectively such that
+
+$$
+y_{p} = u_{1}(x)y_{1}(x) + u_{2}(x)y_{2}(x)
+$$
+
+is a particular solution? 
+
+To see if this is true, we can take first and second-order derivatives of $y_{p}$
+
+$$
+\begin{align}
+y_{p}' &  = u_{1}'y_{1} + u_{1}y_{1}' + u_{2}'y_{2} + u_{2}y_{2}' \\ \\
+y_{p}'' & = u_{1}''y_{1} + 2u_{1}'y_{1}' + u_{1}y_{1}'' + u_{2}''y_{2} + 2u_{2}'y_{2}' + u_{2}y_{2}''
+\end{align}
+$$
+
+and then substitute them into the LHS of `(*)` :
+
+$$
+\begin{align}
+ & y_{p}'' + Py_{p}' + Qy_{p} \\ \\
+ & = (u_{1}''y_{1} + 2u_{1}'y_{1}' + u_{1}y_{1}'' + u_{2}''y_{2} + 2u_{2}'y_{2}' + u_{2}y_{2}'') + P(u_{1}'y_{1} + u_{1}y_{1}' + u_{2}'y_{2} + u_{2}y_{2}') +  Q(u_{1}y_{1} + u_{2}y_{2}) \\ \\
+ & = u_{1}(y_{1}'' + Py_{1}' + Qy_{1}) + u_{2}(y_{2}'' + Py_{2}' + Qy_{2}) + y_{1}u_{1}'' + y_{1}'u_{1}' + y_{2}u_{2}'' + y_{2}'u_{2}' + P(y_{1}u_{1}' + y_{2}u_{2}') + u_{1}'y_{1}' + u_{2}'y_{2}'
+\end{align}
+$$
+
+Since $y_{1}$ and $y_{2}$ are known solutions to the associated homogeneous equation, the first two terms reduce to zero.
+
+$$
+\begin{align}
+& = \cancel{ u_{1}(y_{1}'' + Py_{1}' + Qy_{1}) } + \cancel{ u_{2}(y_{2}'' + Py_{2}' + Qy_{2}) } + y_{1}u_{1}'' + y_{1}'u_{1}' + y_{2}u_{2}'' + y_{2}'u_{2}' + P(y_{1}u_{1}' + y_{2}u_{2}') + u_{1}'y_{1}' + u_{2}'y_{2}' \\ \\
+ & = \frac{d}{dx} \left( y_{1}u_{1}' \right) + \frac{d}{dx} \left( y_{2}u_{2}' \right) + P(u_{1}y_{1}' + u_{2}'y_{2}) + u_{1}'y_{1}' + u_{2}'y_{2}' \\ \\
+ & = \frac{d}{dx} \left( u_{1}'y_{1} + u_{2}'y_{2} \right) + P(u_{1}y_{1}' + u_{2}'y_{2}) + u_{1}'y_{1}' + u_{2}'y_{2}' 
+\end{align}
+$$
+
+Let's make an assumption that $u_{1}'y_{1} + u_{2}'y_{2} = 0$; by making this requirement, we can see that...
+
+$$
+= \cancel{ \frac{d}{dx} \left( u_{1}'y_{1} + u_{2}'y_{2} \right) } + \cancel{ P(u_{1}y_{1}' + u_{2}'y_{2} }) + u_{1}'y_{1}' + u_{2}'y_{2}' 
+$$
+
+and then bringing together the RHS
+
+$$
+u_{1}'y_{1}' + u_{2}'y_{2}' = f(x)
+$$
+
+We now have two equations which form a linear system; solving it would lead us to functions $u_{1}, u_{2}$ allowing us to express $y_{p}$ in terms of $y_{c}$. 
+
+$$
+\begin{align}
+u_{1}'y_{1} + u_{2}'y_{2}  & = 0 \\ \\
+u_{1}'y_{1}' + u_{2}'y_{2}' & = f(x)
+\end{align}
+$$
+
+Solving the system via. [[Cramer's Rule]], we find
+
+$$
+\boxed{ \begin{align}
+u_{1}' &  = \frac{W_{1}}{W} = -\frac{y_{2} \cdot f(x)}{W} \\ \\
+u_{2}' & = \frac{W_{2}}{W} = \frac{y_{1} \cdot f(x)}{W}
+\end{align} } 
+$$
+
+* where $W = W(y_{1}, y_{2})$ denotes the [[Wronskian]] between linearly independent solutions $\{ y_{1}, y_{2} \}$ 
+
+$$
+\begin{align}
+W = W(y_{1}, y_{2}) = \begin{vmatrix}
+y_{1} & y_{2} \\ y_{1}' & y_{2}'
+\end{vmatrix} \\ \\
+W_{1} = \begin{vmatrix}
+0 & y_{2} \\ f(x) & y_{2}'
+\end{vmatrix} \\ \\
+W_{2} = \begin{vmatrix}
+y_{1} & 0 \\ y_{1}' & f(x)
+\end{vmatrix}
+\end{align}
+$$
+
+We can find $u_{1}(x)$ and $u_{2}(x)$ by integration which completes the particular solution $y_{p}$.
+
+## Summary of Method
+
+Given a second-order linear differential equation `(*)`,
+
+1. Find the complementary solution $y_{c}$ and the fundamental solutions $\{ y_{1}, y_{2} \}$. 
+
+2. Compute the Wronskian $W(y_{1}, y_{2})$ and use $f(x)$ from the standard form to derive $u_{1}'$ and $u_{2}'$. 
+
+3. Integrate $u_{1}', u_{2}'$ to form the particular solution $y_{p} = u_{1}y_{1} + u_{2}y_{2}$ and then the general solution.
+
+## Demonstrating the Method
+
+**Problem:** Solve 
+
+$$
+y'' - 4y' + 4y = (x+1)e^{ 2x }
+$$
+
+**Approach:** Note that this second-order linear DE is already in standard form, so we identify $f(x) = (x+1)e^{ 2x }$. 
+
+From the associated auxiliary equation, 
+
+$$
+\begin{align}
+ & m^{2} - 4m + 4 = 0 \\ \\
+ & (m-2)^{2} = 0 \\ \\
+ & m = 2
+\end{align}
+$$
+
+which forms the complementary solution from Case II
+
+$$
+y_{c} = c_{1}e^{ 2x } + c_{2}xe^{ 2x }
+$$
+
+* where we identify $y_{1} = e^{ 2x }$ and $y_{2} = xe^{ 2x }$.
+
+With the fundamental solution, we can compute the Wronskian $W = W(e^{ 2x }, xe^{ 2x })$
+
+$$
+W = \begin{vmatrix}
+e^{ 2x } & xe^{ 2x } \\
+2e^{ 2x } & (1 + 2x)e^{ 2x }
+\end{vmatrix}
+= 
+(1+2x)e^{ 4x } - 2xe^{ 4x } = e^{ 4x }
+$$
+
+Consequently,
+
+$$
+\begin{align}
+u_{1}' &  = - \frac{y_{2} \cdot f(x)}{W} = - \frac{x(x+1)\cancel{ e^{ 4x  }}}{\cancel{ e^{ 4x } }} = -x^{2} - x \\ \\
+u_{2}' & = \frac{y_{1} \cdot f(x)}{W} = \frac{(x+1)\cancel{ e^{ 4x  }}}{\cancel{ e^{ 4x } }} = x+1
+\end{align}
+$$
+
+and then 
+
+$$
+\begin{align}
+u_{1} &  = \int u_{1}'\, dx = -\frac{1}{3}x^{3} - \frac{1}{2}x^{2} \\ \\
+u_{2} & = \int u_{2}'\, dx = \frac{1}{2}x^{2} + x
+\end{align}
+$$
+
+which gives
+
+$$
+\begin{align}
+y_{p}  & = u_{1}y_{1} + u_{2}y_{2} \\ \\
+ & = -\left( \frac{1}{3}x^{3} + \frac{1}{2}x^{2} \right)e^{ 2x } + \left( \frac{1}{2}x^{2} + x \right) xe^{ 2x }\\ \\
+ & = \left( \frac{1}{6}x^{3} + \frac{1}{2}x^{2} \right)e^{ 2x }
+\end{align}
+$$
+
+In conclusion for this problem, the general solution is 
+
+$$
+y = c_{1}e^{ 2x }+ c_{2}xe^{ 2x } + \left( \frac{1}{6}x^{3} + \frac{1}{2}x^{2} \right) e^{ 2x }
+$$
+
+---
+
+### Higher-Order Cases
+
+In general, for an $n$th-order linear differential equation, the variable parameters $u_{i}$ for $i = (1, 2, ..., n)$ can be found as
+
+$$
+u_{i} = \frac{W_{i} \cdot  f(x)}{W}
+$$
+
+* where $W$ is the Wronskian $W(y_{1}, y_{2}, ..., y_{n})$ and $W_{i}$ is the same Wronskian with its $i$-th column replaced with the column vector $(0, 0, ..., 1)^{T}$.
+
+---
+
+**Problem:** Solve the given third-order differential equation by variation of parameters.
+
+$$
+y''' + y' = \cot(x)
+$$
+
+**Approach:** The associated third-degree auxiliary equation can be solved as follows:
+
+$$
+m^{3} + m = 0 \to m(m^{2} + 1) \to m = \{ 0, \pm i \}
+$$
+
+which gives the complementary solution
+
+$$
+y_{c} = c_{1} + c_{2}\cos(x) + c_{3}\sin(x)
+$$
+
+It can be identified our fundamental solutions are $y_{1} = 1, y_{2} = \cos x,  y_{3} = \sin x$. 
+
+Computing the Wronskians $W = W(y_{1}, y_{2}, y_{3})$ and $W_{1}, W_{2}, W_{3}$ where $W_{i}$ is the Wronskian with its $i$th-column replaced by $\begin{bmatrix}0 \\ 0 \\ 1\end{bmatrix}$.
+
+$$
+\begin{align}
+W  & = W(1, \cos x, \sin x) \\ \\
+ & = 
+\begin{vmatrix}
+1 & \cos x & \sin x \\
+0 & -\sin x & \cos x \\
+0 & -\cos x & -\sin x
+\end{vmatrix} = \begin{vmatrix}
+-\sin x & \cos x \\
+-\cos x & -\sin x
+\end{vmatrix} \\ \\
+ & = \sin ^{2}(x) + \cos ^{2}(x) = \boxed{ 1 }  \\ \\
+\hline \\ \\
+ W_{1} & = 
+\begin{vmatrix}
+0 & \cos x & \sin x \\
+0 & -\sin x & \cos x \\
+1 & -\cos x & -\sin x
+\end{vmatrix}
+= \begin{vmatrix}
+\cos x & \sin x \\
+-\sin x & \cos x
+\end{vmatrix} \\ \\
+ & = \cos ^{2}x + \sin ^{2}x = \boxed{ 1 } \\ \\
+\hline \\ \\
+W_{2}  & = \begin{vmatrix}
+1 & 0 & \sin x \\
+0 & 0 & \cos x \\
+0 & 1 & -\sin x
+\end{vmatrix} = \begin{vmatrix}
+0 & \cos x \\
+1 & -\sin x
+\end{vmatrix} \\ \\
+&  = \boxed{ -\cos x } \\ \\
+\hline \\ \\
+W_{3} & = \begin{vmatrix}
+1 & \cos x & 0 \\
+0 & -\sin x & 0 \\
+0 & -\cos x & 1
+\end{vmatrix} = \begin{vmatrix}
+-\sin x & 0 \\
+-\cos x & 1
+\end{vmatrix} \\ \\
+ & = \boxed{ -\sin x } 
+\end{align}
+$$
+
+Consequently,
+
+$$
+\begin{align}
+u_{1} &  = \int \frac{W_{1} \cdot f(x)}{W}\, dx = \int \cot(x)\, dx = \boxed{ \ln|\sin x| }  \\ \\
+u_{2} & = \int \frac{W_{2} \cdot f(x)}{W}\, dx = - \int -\cos x \cdot \frac{\cos x}{\sin x}\, dx = - \int \frac{\cos ^{2}x}{\sin x}\, dx \\ \\
+ & = \int \left( \frac{\sin ^{2}x - 1}{\sin x} \right)\, dx = \int \sin x\, dx - \int \csc x\, dx \\ \\
+ & = \boxed{ \ln|\csc{x} + \cot x| - \cos x } \\ \\
+u_{3} & = \int \frac{W_{3} \cdot f(x)}{W}\, dx = \int -\cancel{ \sin x } \cdot \frac{\cos x}{\cancel{ \sin x }}\, dx = \int \cos x \\ \\
+ & = \boxed{ \sin x }  
+\end{align}
+$$
+
+So the particular solution becomes,
+
+$$
+\begin{align}
+ y_{p} &  = u_{1}y_{1} + u_{2}y_{2} + u_{3}y_{3} \\ \\
+ & = \ln|\sin x| \cdot 1 + \left( \ln|\csc x + \cot x| - \cos x \right) \cdot \cos x - \sin x \cdot \sin x \\ \\
+ & = \ln|\sin x| + \ln|\csc x + \cot x|\cos(x) - \cos ^{2}x - \sin^{2}x \\ \\
+ & = \ln|\sin x| + \ln|\csc x + \cot x|\cos(x) - 1
+\end{align}
+$$
+
+Note that $y_{p}$ contains $-1$ which is just a scaled version of $y_{1}$, so to ensure $y_{p}$ does not contain any of the fundamental solutions, we omit it out of the general solution.
+
+Altogether,
+
+$$
+\boxed{ y(x) = c_{1} + c_{2}\cos x + c_{3}\sin x + \ln|\sin x| + \ln|\csc x + \cot x|\cos(x) } 
+$$

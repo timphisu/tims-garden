@@ -32,12 +32,12 @@ is also a solution of the nonhomogeneous equation.
 
 The part of the above general solution that solves the associated homogeneous equation is called the **complementary function** and is denoted $y_{c}(x) = c_{1}y_{1}(x) + c_{2}y_{2}(x) + \cdots + c_{n}y_{n}(x)$.
 
-So in order to solve a nonhomogeneous linear differential equation, we first solve the associated homogeneous equation and then find any particular solution of the nonhomogeneous equation.
+In order to solve a nonhomogeneous linear differential equation, we first solve the associated homogeneous equation and then find any particular solution of the nonhomogeneous equation.
 
 The general solution of the nonhomogeneous equation is then
 
 $$
-y = y_{c} + y_{p}
+\boxed{ y = y_{c} + y_{p} } 
 $$
 
 ### Superposition Principle for Nonhomogeneous Equations

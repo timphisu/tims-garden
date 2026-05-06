@@ -110,7 +110,7 @@ and when integrated with respect to $y$, we get $g(y)$, which can be substituted
 
 The implicit solution of the differential equation is $f(x, y) = c$.
 
-> Conversely, the same process can be begin with integrating $N(x, y)$ with respect to $y$. Whichever is easier is what should be used to solve exact equation problems.
+> Conversely, the same process can begin with integrating $N(x, y)$ with respect to $y$. Whichever is easier is what should be used to solve exact equation problems.
 
 ### Using Integrating Factors to Force Exact Equations
 

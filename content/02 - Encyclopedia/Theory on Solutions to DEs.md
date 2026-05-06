@@ -42,35 +42,4 @@ It follows from this theorem that when $y_{1}, y_{2}, ..., y_{n}$ are $n$ soluti
 > [!theorem]
 > There exists a fundamental set of solutions for a homogeneous linear $n$th-order differential equation on an interval $I$.
 
-> What this states is that for an $n$th-order differential equation, it is guaranteed that there are exactly $n$ linearly independent solutions to that DE.
-
-This is true based on the fact that any solution of an $n$th-order homogeneous linear differential equation on an interval $I$ can be expressed as a linear combination of $n$ linearly independent solutions on $I$. 
-#### General Solution for Homogeneous Equations
-
-> [!definition] 
-> Let $y_{1}, y_{2}, ..., y_{n}$ be a fundamental set of solutions of a homogeneous linear $n$th-order differential equation on an interval $I$. Then the **general solution** of the equation on an interval is
-> 
-> $$
-> y = c_{1}y_{1}(x) + c_{2}y_{2}(x) + \cdots + c_{n}y_{n}(x)
-> $$
-> 
-> * where $c_{i}$ for $i = 1, 2, ..., n$ are arbitrary constants.
-> 
-
-##### Examples of the General Solution
-
-The functions $y_{1} = e^{ x }$, $y_{2} = e^{ 2x }$, and $y_{3} = e^{ 3x }$ satisfy the third-order equation $y''' - 6y'' + 11y' - 6y = 0$. 
-
-Since
-
-$$
-W(e^{ x }, e^{ 2x }, e^{ 3x }) = 
-\begin{vmatrix}
-e^{ x } & e^{ 2x } & e^{ 3x } \\ \\
-e^{ x } & 2e^{ 2x } & 3e^{ 3x } \\ \\
-e^{ x } & 4e^{ 2x } & 9e^{ 3x }
-\end{vmatrix}
-= 2e^{ 6x } \ne 0
-$$
-
-for every real value of $x$, the functions $y_{1}, y_{2}, y_{3}$ form a fundamental set of solutions on $(-\infty, \infty)$. We conclude that $$y = c_{1}e^{ x } + c_{2}e^{ 2x } + c_{3}e^{ 3x }$$ is the general solution of the differential equation on the interval.
+> What this means for an $n$th-order differential equation is the guarantee that there are exactly $n$ linearly independent solutions to that DE.

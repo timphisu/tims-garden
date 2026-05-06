@@ -7,9 +7,7 @@ tags:
   - math/form
 ---
 # Linear Differential Equations
-## Forms of Linear DEs
-
-### First-Order Form
+## First-Order Form
 
 > [!definition]
 > A first-order differential equation of the form

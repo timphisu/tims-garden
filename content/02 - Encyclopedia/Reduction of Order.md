@@ -7,6 +7,8 @@ tags:
   - math/concept
 ---
 
+# Reduction of Order
+
 ## Introduction
 
 Recall that the general solution of a homogeneous linear second-order differential equation `(1)`
@@ -187,3 +189,47 @@ $$
 $$
 
 Disregarding the scalars or just by choosing $c_{1} = -2, c_{2} = 0$, then we form a desired second solution $y_{2} = e^{ -x }$ which is linearly independent since $W(e^{ x }, e^{ -x }) \ne 0$ for every $x$ on $(-\infty, \infty)$.
+
+---
+
+**Problem:** Find a second solution $y_{2}$
+
+$$
+y'' + 36y = 0; \quad y_{1} = \cos(6x)
+$$
+
+**Approach:** We should recognize that $P = 0$ in this DE and that gives $- \int P\, dx = -C$. 
+
+Our new solution becomes
+
+$$
+\begin{align}
+ y_{2} &  = y_{1} \int \frac{e^{-\int P\, dx}}{y_{1}^{2}} \\ \\
+ &  = \cos(6x) \cdot \int \frac{e^{-C}}{\cos ^{2}(6x)}\, dx \\ \\
+ & = e^{-C}\cos(6x) \int \sec ^{2}(6x)\, dx \\ \\
+ & = e^{-C} \cos(6x) \cdot \tan(6x) + C
+\end{align}
+$$
+
+> [!info] Drop Constants when Finding a Second Solution
+> Note that we are seeking to find a linearly independent solution from $y_{1}$ in its fundamental form. So any scalar multiples or constants of integration are negligible. It's best practice to drop constants when unnecessary to solving for $y_{2}$.
+
+Hence,
+
+$$
+\begin{align}
+ y_{2} &  = \cancel{ e^{-C} } \cos(6x) \cdot \tan(6x) \cancel{ + C } \\ \\
+  & = \cancel{ \cos(6x) } \cdot \frac{\sin(6x)}{\cancel{ \cos(6x) }} \\ \\
+ & = \sin(6x)
+\end{align}
+$$
+
+Our general solution becomes
+
+$$
+y = c_{1}\cos(6x) + c_{2}\sin(6x)
+$$
+
+
+
+
