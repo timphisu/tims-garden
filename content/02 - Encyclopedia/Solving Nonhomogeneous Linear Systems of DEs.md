@@ -189,6 +189,12 @@ $$
 \Phi(t_{0})\vec{C} = \vec{X}_{0} \implies \vec{C} = \Phi ^{-1}(t_{0})\vec{X}_{0}
 $$
 
+> [!warning]
+> 
+> The formula $\vec{C} = \Phi^{-1}(t_0)\vec{X}_0$ assumes the particular solution is defined using a definite integral $\int_{t_0}^{t}$.
+> 
+> If you calculate $\vec{U}$ as an indefinite integral (an antiderivative), you cannot assume $\vec{U}(t_0) = \vec{0}$. If $\vec{X}_p(t_0) \neq \vec{0}$, you must solve for $\vec{C}$ using the full expression: $\vec{X}(t_0) = \Phi(t_0)\vec{C} + \vec{X}_p(t_0)$.
+
 ---
 
 **Problem:** Solve the following system given the initial condition
