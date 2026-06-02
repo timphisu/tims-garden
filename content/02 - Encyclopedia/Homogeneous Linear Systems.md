@@ -405,10 +405,12 @@ This means the general solution will contain $c_{1}\vec{X}_{1} + c_{2}\vec{X}_{2
 
 $$
 \begin{align}
-c_{1}\vec{X}_{1} + c_{2}\vec{X}_{2} & = [c_{1} \vec{B}_{1} + c_{2}\vec{B}_{2}]e^{ \alpha t }\cos(\beta t) + [c_{2}\vec{B}_{2} - c_{1}\vec{B}_{1}]e^{ \alpha t }\sin(\beta t)
+\vec{X}(t) &  = c_{1}\vec{X}_{1} + c_{2}\vec{X}_{2} \\ \\
+& = [c_{1} \vec{B}_{1} + c_{2}\vec{B}_{2}]e^{ \alpha t }\cos(\beta t) + [c_{2}\vec{B}_{2} - c_{1}\vec{B}_{1}]e^{ \alpha t }\sin(\beta t)
 \end{align}
 $$
 
 
 > It makes sense why $\vec{B}_{1}$ and $\vec{B}_{2}$ are linearly independent making $\{ \vec{X}_{1}, \vec{X}_{2} \}$ independent is because the complex parts of a number will never be a scalar multiple of a real number. 
 #### Examples Working with Complex Eigenvalues
+
