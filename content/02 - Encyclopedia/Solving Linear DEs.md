@@ -82,7 +82,7 @@ $$
 > $$
 > Ce^{\int P(x)\, dx} \frac{dy}{dx} + Ce^{\int P(x)\, dx} P(x) = Ce^{\int P(x)\, dx}f(x)
 > $$
-> We quickly find out that $C$'s can pretty much cancel out.
+> We find that the $C$'s  pretty much cancel out.
 
 > Note that the constant of integration for $\mu(x)$ is negligible but the the constant in $\int \mu(x)f(x)\, dx + C$ is <u>not</u> negligible.
 
@@ -158,7 +158,7 @@ $$
 \begin{align}
  & (x+1) \frac{dy}{dx} - xy = x + x^{2} \\ \\
  & \frac{dy}{dx} - \frac{xy}{x+1} = \frac{x(1 + x)}{x+1} \\ \\ \\
- & \frac{dy}{dx} = \left( \frac{x}{x+1} \right) y = x
+ & \frac{dy}{dx} - \left( \frac{x}{x+1} \right) y = x
 \end{align}
 $$
 
@@ -197,7 +197,7 @@ $$
 
 Now considering the domain of the function above, it is $(-\infty, -1)\cup(-1, \infty)$. We choose a continuous interval, either of the two, and define $I = (-1, \infty)$.
 
-Note that if we take $\lim_{ x \to \infty }y$ then none of the terms converge to $0$, so there are no transient terms in this solution.
+> Note that if we take $\lim_{ x \to \infty }y$ then none of the terms converge to $0$, so there are no transient terms in this solution.
 
 ---
 
