@@ -10,7 +10,7 @@ title: Tim's Garden 🪴
 
 ### 👋 About Me
 
-My name is Timothy De Lange. I'm a nineteen year old college student finishing up my third year at Pasadena City College. I have interests in machine learning, social sciences, and fascinating mathematics problems. Looking forward to transfer out in Fall 2026. 
+My name is Timothy De Lange. I'm a 20 year old college student transferring to UC Berkeley in Fall 2026. I have interests in machine learning, social sciences, and fascinating mathematics problems. 
 
 ### 🚀 Featured Work
 
