@@ -1,3 +1,7 @@
+---
+tags:
+  - math/subject/linear-algebra
+---
 
 > [!theorem] Theorem 3.3.2
 > If $\vec{u}$ and $\vec{a}$ are vectors in $R^{n}$, and if $a \ne \vec{0}$, then $\vec{u}$ can be expressed in exactly one way in the form $\vec{u} = \vec{w}_{1} + \vec{w}_{2}$, where $\vec{w}_{1}$ is a scalar multiple of $\vec{a}$ and $\vec{w}_{2}$ is orthogonal to $\vec{a}$. 
