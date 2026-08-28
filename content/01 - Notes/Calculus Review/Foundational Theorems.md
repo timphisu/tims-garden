@@ -130,16 +130,16 @@ Since we've shown that $f'(c) \leq 0$ and $f'(c) \geq 0$ and those are both true
 > Then there exists some number $c \in (a, b)$ such that $f'(c) = 0$.
 
 ## Proof
-
-### Case I: $f(x) = k$
+ 
+ **Case I: $f(x) = k$**
 
 If $f(x) = k$, a constant, then any number $c \in (a, b)$ satisfies $f'(c) = 0$, granted that $f$ is continuous and differentiable on the respective interval. 
 
-### Case II: $f(x) > f(a)$ for some $x$ in $(a, b)$
+**Case II: $f(x) > f(a)$ for some $x$ in $(a, b)$**
 
 By the Extreme Value Theorem, due to condition (1) being satisfied, there exists a maximum value somewhere in $[a, b]$. But since $f(a) = f(b)$, the max has to be at some number $c \in (a, b)$. If $f$ is differentiable on the open interval $(a, b)$ and $c \in (a, b)$, then $f'(c)$ exists. We know that $f$ is continuous on $[a, b]$ and $f'(c)$ exists, then $f'(c) = 0$ by Fermat's Theorem.
 
-### Case III: $f(x) < f(a)$ for some $x$ in $(a, b)$
+**Case III: $f(x) < f(a)$ for some $x$ in $(a, b)$**
 
 Similarly to Case II, by the EVT from (1), there exists a minimum value somewhere in $[a, b]$, but $f(a) = f(b)$ tells us that some number $c \in (a, b)$ must be where the minima lives. By differentiability, $f'(c)$ exists and hence $f'(c) = 0$ by Fermat's Theorem. 
 
