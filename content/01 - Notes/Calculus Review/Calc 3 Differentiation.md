@@ -5,7 +5,7 @@ tags:
 
 # Chain Rule
 
-> [!theorem] Chain Rule: Big Boy Version
+> [!theorem]
 > 
 > Suppose that $u$ is a differentiable function of the $n$ variables $x_{1}, x_{2}, \cdots, x_{n}$ and each $x_{i}$ is a differentiable function of the $m$ variables $t_{1}, t_{2},\cdots, t_{m}$. Then $u$ is a function of $t_{1}, t_{2}, \cdots, t_{m}$ and 
 > 
